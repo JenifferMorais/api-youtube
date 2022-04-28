@@ -1,0 +1,106 @@
+{
+    "comment": "Boa noite amiga! Ótima receita. Uma boa alternativa para fazer aqui em casa, pois o Henrique ama ovo frito. Obrigada por compartilhar! 🥰",
+    "analysis": {
+        "emotions": {
+            "sadness": 0.0,
+            "joy": 0.9,
+            "fear": 0.0,
+            "disgust": 0.0,
+            "anger": 0.0
+        },
+        "sentiment": {
+            "score": 0.9,
+            "label": "POSITIVE"
+        }
+    }
+}{
+    "comment": "Amei e vou tentar fazer tbm amo ovo",
+    "analysis": {
+        "emotions": {
+            "sadness": 0.0,
+            "joy": 1.0,
+            "fear": 0.0,
+            "disgust": 0.0,
+            "anger": 0.0
+        },
+        "sentiment": {
+            "score": 1.0,
+            "label": "POSITIVE"
+        }
+    }
+}{
+    "comment": "Ótima  dica!!!! Vou fazer  já !!!!",
+    "analysis": {
+        "emotions": {
+            "sadness": 0.0,
+            "joy": 1.0,
+            "fear": 0.0,
+            "disgust": 0.0,
+            "anger": 0.0
+        },
+        "sentiment": {
+            "score": 1.0,
+            "label": "POSITIVE"
+        }
+    }
+}{
+    "comment": "Eu sou apaixonada por ovos fritos também 😍 e amei essa versão super saudável",
+    "analysis": {
+        "emotions": {
+            "sadness": 0.0,
+            "joy": 1.0,
+            "fear": 0.0,
+            "disgust": 0.0,
+            "anger": 0.0
+        },
+        "sentiment": {
+            "score": 1.0,
+            "label": "POSITIVE"
+        }
+    }
+}{
+    "comment": "Muito bom, vou tentar fazer hoje😉😋",
+    "analysis": {
+        "emotions": {
+            "sadness": 0.0,
+            "joy": 1.0,
+            "fear": 0.0,
+            "disgust": 0.0,
+            "anger": 0.0
+        },
+        "sentiment": {
+            "score": 1.0,
+            "label": "POSITIVE"
+        }
+    }
+}{
+    "comment": "parabéns pelo trabalho deus abençoe",
+    "analysis": {
+        "emotions": {
+            "sadness": 0.0,
+            "joy": 1.0,
+            "fear": 0.0,
+            "disgust": 0.0,
+            "anger": 0.0
+        },
+        "sentiment": {
+            "score": 1.0,
+            "label": "POSITIVE"
+        }
+    }
+}{
+    "comment": "Amei essa receita eu amo ovo frito",
+    "analysis": {
+        "emotions": {
+            "sadness": 0.0,
+            "joy": 1.0,
+            "fear": 0.0,
+            "disgust": 0.0,
+            "anger": 0.0
+        },
+        "sentiment": {
+            "score": 1.0,
+            "label": "POSITIVE"
+        }
+    }
+}
