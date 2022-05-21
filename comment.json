@@ -1,106 +1,515 @@
-{
-    "comment": "Boa noite amiga! Ótima receita. Uma boa alternativa para fazer aqui em casa, pois o Henrique ama ovo frito. Obrigada por compartilhar! 🥰",
-    "analysis": {
-        "emotions": {
-            "sadness": 0.0,
-            "joy": 0.9,
-            "fear": 0.0,
-            "disgust": 0.0,
-            "anger": 0.0
-        },
-        "sentiment": {
-            "score": 0.9,
-            "label": "POSITIVE"
+[
+    {
+        "comment": "Que delícia Dany,  acabei de fzr.<br>Tô aqui com meu esposo saboreando. <br>Maravilhoso,  super recomendo , dando meu like e..já compartilhando e me inscrevendo .<br>Obg queridaa 👋👋👋👋",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.6791666666666667,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.6791666666666667,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Amo tapiovo 😋😋",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 1.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 1.0,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "HUM Parece muito bom!!",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 1.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 1.0,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "delícia!",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.3,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.3,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "😋😋😋😋😋❤️",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.8625,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.8625,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Que receita TERRÍVEL Dani",
+        "analysis": {
+            "emotions": {
+                "sadness": 1.0,
+                "joy": 0.0,
+                "fear": 1.0,
+                "disgust": 1.0,
+                "anger": 0.2625
+            },
+            "sentiment": {
+                "score": -1.0,
+                "label": "NEGATIVE"
+            }
+        }
+    },
+    {
+        "comment": "Parabéns, Dani.Mais uma receita legal...🔝🔝🔝🔝🔝🔝🔝🔝🔝🔝",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.9791666666666666,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.9791666666666666,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Hum parece delicioso, Vou fazer com certeza! 😋😋",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 1.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 1.0,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Adorei 😍",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 1.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 1.0,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Ficou uma bosta, lixo, não dou link porra nenhuma",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.525,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 1.0,
+                "anger": 0.7875
+            },
+            "sentiment": {
+                "score": -0.7875,
+                "label": "NEGATIVE"
+            }
+        }
+    },
+    {
+        "comment": "Que receita maravilhosa eu amo tapioca mais essa eu não sabia eu faço sempre crepioca obrigada bjoss fica com Deus",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 1.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 1.0,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Parece muito gostoso",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 1.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 1.0,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Amei essa receita!<br>Prática e fácil!<br>Obrigada amada.<br>Bjos",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.8,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.8,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Muito bom",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 1.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 1.0,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Adorei vou tentar fazer ❤",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 1.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 1.0,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Que delícia 😋",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.6125,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.6125,
+                "label": "POSITIVE"
+            }
         }
     }
-}{
-    "comment": "Amei e vou tentar fazer tbm amo ovo",
-    "analysis": {
-        "emotions": {
-            "sadness": 0.0,
-            "joy": 1.0,
-            "fear": 0.0,
-            "disgust": 0.0,
-            "anger": 0.0
-        },
-        "sentiment": {
-            "score": 1.0,
-            "label": "POSITIVE"
+][
+    {
+        "comment": "Que delícia Dany,  acabei de fzr.<br>Tô aqui com meu esposo saboreando. <br>Maravilhoso,  super recomendo , dando meu like e..já compartilhando e me inscrevendo .<br>Obg queridaa 👋👋👋👋",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.6791666666666667,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.6791666666666667,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Amo tapiovo 😋😋",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 1.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 1.0,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "HUM Parece muito bom!!",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 1.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 1.0,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "delícia!",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.3,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.3,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "😋😋😋😋😋❤️",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.8625,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.8625,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Que receita TERRÍVEL Dani",
+        "analysis": {
+            "emotions": {
+                "sadness": 1.0,
+                "joy": 0.0,
+                "fear": 1.0,
+                "disgust": 1.0,
+                "anger": 0.2625
+            },
+            "sentiment": {
+                "score": -1.0,
+                "label": "NEGATIVE"
+            }
+        }
+    },
+    {
+        "comment": "Parabéns, Dani.Mais uma receita legal...🔝🔝🔝🔝🔝🔝🔝🔝🔝🔝",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.9791666666666666,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.9791666666666666,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Hum parece delicioso, Vou fazer com certeza! 😋😋",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 1.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 1.0,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Adorei 😍",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 1.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 1.0,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Ficou uma bosta, lixo, não dou link porra nenhuma",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.525,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 1.0,
+                "anger": 0.7875
+            },
+            "sentiment": {
+                "score": -0.7875,
+                "label": "NEGATIVE"
+            }
+        }
+    },
+    {
+        "comment": "Que receita maravilhosa eu amo tapioca mais essa eu não sabia eu faço sempre crepioca obrigada bjoss fica com Deus",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 1.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 1.0,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Parece muito gostoso",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 1.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 1.0,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Amei essa receita!<br>Prática e fácil!<br>Obrigada amada.<br>Bjos",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.8,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.8,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Muito bom",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 1.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 1.0,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Adorei vou tentar fazer ❤",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 1.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 1.0,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Que delícia 😋",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.6125,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.6125,
+                "label": "POSITIVE"
+            }
         }
     }
-}{
-    "comment": "Ótima  dica!!!! Vou fazer  já !!!!",
-    "analysis": {
-        "emotions": {
-            "sadness": 0.0,
-            "joy": 1.0,
-            "fear": 0.0,
-            "disgust": 0.0,
-            "anger": 0.0
-        },
-        "sentiment": {
-            "score": 1.0,
-            "label": "POSITIVE"
-        }
-    }
-}{
-    "comment": "Eu sou apaixonada por ovos fritos também 😍 e amei essa versão super saudável",
-    "analysis": {
-        "emotions": {
-            "sadness": 0.0,
-            "joy": 1.0,
-            "fear": 0.0,
-            "disgust": 0.0,
-            "anger": 0.0
-        },
-        "sentiment": {
-            "score": 1.0,
-            "label": "POSITIVE"
-        }
-    }
-}{
-    "comment": "Muito bom, vou tentar fazer hoje😉😋",
-    "analysis": {
-        "emotions": {
-            "sadness": 0.0,
-            "joy": 1.0,
-            "fear": 0.0,
-            "disgust": 0.0,
-            "anger": 0.0
-        },
-        "sentiment": {
-            "score": 1.0,
-            "label": "POSITIVE"
-        }
-    }
-}{
-    "comment": "parabéns pelo trabalho deus abençoe",
-    "analysis": {
-        "emotions": {
-            "sadness": 0.0,
-            "joy": 1.0,
-            "fear": 0.0,
-            "disgust": 0.0,
-            "anger": 0.0
-        },
-        "sentiment": {
-            "score": 1.0,
-            "label": "POSITIVE"
-        }
-    }
-}{
-    "comment": "Amei essa receita eu amo ovo frito",
-    "analysis": {
-        "emotions": {
-            "sadness": 0.0,
-            "joy": 1.0,
-            "fear": 0.0,
-            "disgust": 0.0,
-            "anger": 0.0
-        },
-        "sentiment": {
-            "score": 1.0,
-            "label": "POSITIVE"
-        }
-    }
-}
+]
