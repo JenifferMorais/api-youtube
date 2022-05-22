@@ -11,7 +11,6 @@ analysis_list = []
 
 # Resgata Comentários
 def video_comments(url_video):
-    replies = []
 
     video_id = handler_video(url_video)
 
@@ -22,19 +21,11 @@ def video_comments(url_video):
     while video_response:
         for item in video_response['items']:
             comment = item['snippet']['topLevelComment']['snippet']['textDisplay']
-            replycount = item['snippet']['totalReplyCount']
-            if replycount > 0:
-                for reply in item['replies']['comments']:
-                    reply = reply['snippet']['textDisplay']
-                    replies.append(reply)
             analysis(comment)
-            replies = []
         if 'nextPageToken' in video_response:
-            video_response = youtube.commentThreads().list(
-                part='snippet,replies', videoId=video_id).execute()
+            video_response = youtube.commentThreads().list(part='snippet, replies', videoId= video_id).execute()
         else:
             break
-
 
 # Analisa comentario
 def analysis(comment):
@@ -62,10 +53,12 @@ def write():
     analysis_json = json.dumps(analysis_list, indent=4, ensure_ascii=False)
     print(analysis_json)
     with open("comment.json", "a", encoding="utf-8") as outfile:
+        outfile.write("Vídeo:")
+        outfile.write(url_video)
         outfile.write(analysis_json)
 
 
 if __name__ == '__main__':
-    url_video = "https://www.youtube.com/watch?v=3jiqiiAIDqM"
+    url_video = input("Link do Vídeo? ")
     video_comments(url_video)
     write()

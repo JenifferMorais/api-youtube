@@ -1,22 +1,6 @@
-[
+Vídeo:https://www.youtube.com/watch?v=iFYWrDMfVNo[
     {
-        "comment": "Que delícia Dany,  acabei de fzr.<br>Tô aqui com meu esposo saboreando. <br>Maravilhoso,  super recomendo , dando meu like e..já compartilhando e me inscrevendo .<br>Obg queridaa 👋👋👋👋",
-        "analysis": {
-            "emotions": {
-                "sadness": 0.0,
-                "joy": 0.6791666666666667,
-                "fear": 0.0,
-                "disgust": 0.0,
-                "anger": 0.0
-            },
-            "sentiment": {
-                "score": 0.6791666666666667,
-                "label": "POSITIVE"
-            }
-        }
-    },
-    {
-        "comment": "Amo tapiovo 😋😋",
+        "comment": "cara você explicou bem mais facil que meu professor de faculdade haha",
         "analysis": {
             "emotions": {
                 "sadness": 0.0,
@@ -32,7 +16,7 @@
         }
     },
     {
-        "comment": "HUM Parece muito bom!!",
+        "comment": "Muito bom vídeo aula muito intuitiva sem enrrolação !!",
         "analysis": {
             "emotions": {
                 "sadness": 0.0,
@@ -48,46 +32,78 @@
         }
     },
     {
-        "comment": "delícia!",
+        "comment": "Adorei",
         "analysis": {
             "emotions": {
                 "sadness": 0.0,
-                "joy": 0.3,
+                "joy": 1.0,
                 "fear": 0.0,
                 "disgust": 0.0,
                 "anger": 0.0
             },
             "sentiment": {
-                "score": 0.3,
+                "score": 1.0,
                 "label": "POSITIVE"
             }
         }
     },
     {
-        "comment": "😋😋😋😋😋❤️",
+        "comment": "vc explica muito bem",
         "analysis": {
             "emotions": {
                 "sadness": 0.0,
-                "joy": 0.8625,
+                "joy": 0.65625,
                 "fear": 0.0,
                 "disgust": 0.0,
                 "anger": 0.0
             },
             "sentiment": {
-                "score": 0.8625,
+                "score": 0.65625,
                 "label": "POSITIVE"
             }
         }
     },
     {
-        "comment": "Que receita TERRÍVEL Dani",
+        "comment": "Uma dúvida, como posso fazer uma repetição de strings utilizando o input com while? Cmg sempre da erro -(, obrigado pelo video!",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.625,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.625,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "O amigo, gostei da sua explicação!",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.9375,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.9375,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Você ensinamuito bem... Se dependesse de alguns professores da Udemy ficaria BEM complicado.",
         "analysis": {
             "emotions": {
                 "sadness": 1.0,
                 "joy": 0.0,
-                "fear": 1.0,
-                "disgust": 1.0,
-                "anger": 0.2625
+                "fear": 0.525,
+                "disgust": 0.525,
+                "anger": 0.525
             },
             "sentiment": {
                 "score": -1.0,
@@ -96,61 +112,157 @@
         }
     },
     {
-        "comment": "Parabéns, Dani.Mais uma receita legal...🔝🔝🔝🔝🔝🔝🔝🔝🔝🔝",
+        "comment": "Obrigada por disponibilizar esse vídeo, espero que você dê procedimento a playlist de python. =]",
         "analysis": {
             "emotions": {
                 "sadness": 0.0,
-                "joy": 0.9791666666666666,
+                "joy": 0.4375,
                 "fear": 0.0,
                 "disgust": 0.0,
                 "anger": 0.0
             },
             "sentiment": {
-                "score": 0.9791666666666666,
+                "score": 0.4375,
                 "label": "POSITIVE"
             }
         }
     },
     {
-        "comment": "Hum parece delicioso, Vou fazer com certeza! 😋😋",
+        "comment": "Como colocar contador para parar um resultado string? Tipo: <br>m = &#39;masculino&#39;<br>f = &#39;feminino&#39;<br>while sexo != masculino or sexo != feminino:<br>Print  (&#39;Inválido. Tente de novo.&#39;)",
         "analysis": {
             "emotions": {
                 "sadness": 0.0,
-                "joy": 1.0,
+                "joy": 0.9166666666666666,
                 "fear": 0.0,
                 "disgust": 0.0,
                 "anger": 0.0
             },
             "sentiment": {
-                "score": 1.0,
+                "score": 0.9166666666666666,
                 "label": "POSITIVE"
             }
         }
     },
     {
-        "comment": "Adorei 😍",
+        "comment": "ótima metodologia de ensino!!! ensinou muito bem, entendi tudo, obrigado!! +1 inscrito",
         "analysis": {
             "emotions": {
                 "sadness": 0.0,
-                "joy": 1.0,
+                "joy": 0.7416666666666667,
                 "fear": 0.0,
                 "disgust": 0.0,
                 "anger": 0.0
             },
             "sentiment": {
-                "score": 1.0,
+                "score": 0.7416666666666667,
                 "label": "POSITIVE"
             }
         }
     },
     {
-        "comment": "Ficou uma bosta, lixo, não dou link porra nenhuma",
+        "comment": "muito bom,  sanou minhas dúvidas",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.7875,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.7875,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "E com string como ficaria???",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "obrigada!",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "Cara, eu adorei que você errou algumas vezes, porque são os erros que nós que estamos aprendendo cometemos, de quebra você já ensina também o que pode estar errado quando esses erros são cometidos.",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.1455,
+                "joy": 0.515,
+                "fear": 0.1455,
+                "disgust": 0.0,
+                "anger": 0.1455
+            },
+            "sentiment": {
+                "score": 0.2725,
+                "label": "MIXED"
+            }
+        }
+    },
+    {
+        "comment": "Obrigado!",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.625,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.625,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Salvou... tinha travado no while e no for e vc me ajudou muito a destravar.",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.65625,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.65625,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "pq a condicao a seguir demonstra falha?<br><br>x= float(input(digite um numero))<br><br>while x != float:<br>      print(valor invalido, insira valor valido)<br>       x= float(input(digite um numero))",
         "analysis": {
             "emotions": {
                 "sadness": 0.525,
                 "joy": 0.0,
                 "fear": 0.0,
-                "disgust": 1.0,
+                "disgust": 0.0,
                 "anger": 0.7875
             },
             "sentiment": {
@@ -160,7 +272,7 @@
         }
     },
     {
-        "comment": "Que receita maravilhosa eu amo tapioca mais essa eu não sabia eu faço sempre crepioca obrigada bjoss fica com Deus",
+        "comment": "muito bom",
         "analysis": {
             "emotions": {
                 "sadness": 0.0,
@@ -176,7 +288,23 @@
         }
     },
     {
-        "comment": "Parece muito gostoso",
+        "comment": "Cara obrigado, consegui entender....fiz usando o for e o while para comparar...obrigado mesmo!",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.575,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.575,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Sua explicação foi excelente",
         "analysis": {
             "emotions": {
                 "sadness": 0.0,
@@ -187,237 +315,221 @@
             },
             "sentiment": {
                 "score": 1.0,
-                "label": "POSITIVE"
-            }
-        }
-    },
-    {
-        "comment": "Amei essa receita!<br>Prática e fácil!<br>Obrigada amada.<br>Bjos",
-        "analysis": {
-            "emotions": {
-                "sadness": 0.0,
-                "joy": 0.8,
-                "fear": 0.0,
-                "disgust": 0.0,
-                "anger": 0.0
-            },
-            "sentiment": {
-                "score": 0.8,
-                "label": "POSITIVE"
-            }
-        }
-    },
-    {
-        "comment": "Muito bom",
-        "analysis": {
-            "emotions": {
-                "sadness": 0.0,
-                "joy": 1.0,
-                "fear": 0.0,
-                "disgust": 0.0,
-                "anger": 0.0
-            },
-            "sentiment": {
-                "score": 1.0,
-                "label": "POSITIVE"
-            }
-        }
-    },
-    {
-        "comment": "Adorei vou tentar fazer ❤",
-        "analysis": {
-            "emotions": {
-                "sadness": 0.0,
-                "joy": 1.0,
-                "fear": 0.0,
-                "disgust": 0.0,
-                "anger": 0.0
-            },
-            "sentiment": {
-                "score": 1.0,
-                "label": "POSITIVE"
-            }
-        }
-    },
-    {
-        "comment": "Que delícia 😋",
-        "analysis": {
-            "emotions": {
-                "sadness": 0.0,
-                "joy": 0.6125,
-                "fear": 0.0,
-                "disgust": 0.0,
-                "anger": 0.0
-            },
-            "sentiment": {
-                "score": 0.6125,
                 "label": "POSITIVE"
             }
         }
     }
-][
+]Vídeo:https://www.youtube.com/watch?v=bkSePLdPiDk[
     {
-        "comment": "Que delícia Dany,  acabei de fzr.<br>Tô aqui com meu esposo saboreando. <br>Maravilhoso,  super recomendo , dando meu like e..já compartilhando e me inscrevendo .<br>Obg queridaa 👋👋👋👋",
+        "comment": "Este curso não está completo. São apenas algumas aulas liberadas gratuitamente por amor a comunidade Python. O curso completo encontra-se na Udemy e tem mais de 200 aulas, link na descrição do vídeo.",
         "analysis": {
             "emotions": {
-                "sadness": 0.0,
-                "joy": 0.6791666666666667,
+                "sadness": 0.84,
+                "joy": 0.455,
                 "fear": 0.0,
                 "disgust": 0.0,
                 "anger": 0.0
             },
             "sentiment": {
-                "score": 0.6791666666666667,
-                "label": "POSITIVE"
+                "score": -0.385,
+                "label": "MIXED"
             }
         }
     },
     {
-        "comment": "Amo tapiovo 😋😋",
+        "comment": "Olá eu tentei fazer um pouco diferente, ao invés de aceitar apenas int, tentei colocar para float mas n funcionou!<br>Como seria?",
         "analysis": {
             "emotions": {
-                "sadness": 0.0,
-                "joy": 1.0,
+                "sadness": 0.925,
+                "joy": 0.145,
                 "fear": 0.0,
                 "disgust": 0.0,
                 "anger": 0.0
             },
             "sentiment": {
-                "score": 1.0,
-                "label": "POSITIVE"
-            }
-        }
-    },
-    {
-        "comment": "HUM Parece muito bom!!",
-        "analysis": {
-            "emotions": {
-                "sadness": 0.0,
-                "joy": 1.0,
-                "fear": 0.0,
-                "disgust": 0.0,
-                "anger": 0.0
-            },
-            "sentiment": {
-                "score": 1.0,
-                "label": "POSITIVE"
-            }
-        }
-    },
-    {
-        "comment": "delícia!",
-        "analysis": {
-            "emotions": {
-                "sadness": 0.0,
-                "joy": 0.3,
-                "fear": 0.0,
-                "disgust": 0.0,
-                "anger": 0.0
-            },
-            "sentiment": {
-                "score": 0.3,
-                "label": "POSITIVE"
-            }
-        }
-    },
-    {
-        "comment": "😋😋😋😋😋❤️",
-        "analysis": {
-            "emotions": {
-                "sadness": 0.0,
-                "joy": 0.8625,
-                "fear": 0.0,
-                "disgust": 0.0,
-                "anger": 0.0
-            },
-            "sentiment": {
-                "score": 0.8625,
-                "label": "POSITIVE"
-            }
-        }
-    },
-    {
-        "comment": "Que receita TERRÍVEL Dani",
-        "analysis": {
-            "emotions": {
-                "sadness": 1.0,
-                "joy": 0.0,
-                "fear": 1.0,
-                "disgust": 1.0,
-                "anger": 0.2625
-            },
-            "sentiment": {
-                "score": -1.0,
+                "score": -0.6833333333333333,
                 "label": "NEGATIVE"
             }
         }
     },
     {
-        "comment": "Parabéns, Dani.Mais uma receita legal...🔝🔝🔝🔝🔝🔝🔝🔝🔝🔝",
+        "comment": "Ótima aula! Python já é de fácil intendimento e quando o professor é bom aí fica perfeito! pycoffee!!! seu curso tem aulas com a biblioteca keras?",
         "analysis": {
             "emotions": {
                 "sadness": 0.0,
-                "joy": 0.9791666666666666,
+                "joy": 0.8513888888888889,
                 "fear": 0.0,
                 "disgust": 0.0,
                 "anger": 0.0
             },
             "sentiment": {
-                "score": 0.9791666666666666,
+                "score": 0.8513888888888889,
                 "label": "POSITIVE"
             }
         }
     },
     {
-        "comment": "Hum parece delicioso, Vou fazer com certeza! 😋😋",
+        "comment": "Olá Pessoal<br><br>O que está errado aqui?<br><br>Traceback (most recent call last):\r<br>  File &quot;C:\\Users\\anderson.vale\\PycharmProjects\\anderson\\CURSO BASICO <a href=\"http://python.py/\">PYTHON.py</a>&quot;, line 102, in &lt;module&gt;\r<br>    if not numero_01.isnumeric() or not numero_02.isnumeric():\r<br>AttributeError: &#39;int&#39; object has no attribute &#39;isnumeric&#39;",
         "analysis": {
             "emotions": {
                 "sadness": 0.0,
-                "joy": 1.0,
+                "joy": 0.525,
                 "fear": 0.0,
                 "disgust": 0.0,
                 "anger": 0.0
             },
             "sentiment": {
-                "score": 1.0,
+                "score": 0.525,
                 "label": "POSITIVE"
             }
         }
     },
     {
-        "comment": "Adorei 😍",
+        "comment": "muito bom o video... bastante compreensiva a sua metodlogia de ensino",
         "analysis": {
             "emotions": {
                 "sadness": 0.0,
-                "joy": 1.0,
+                "joy": 0.9375,
                 "fear": 0.0,
                 "disgust": 0.0,
                 "anger": 0.0
             },
             "sentiment": {
-                "score": 1.0,
+                "score": 0.9375,
                 "label": "POSITIVE"
             }
         }
     },
     {
-        "comment": "Ficou uma bosta, lixo, não dou link porra nenhuma",
+        "comment": "E while com string, só vejo aulas com int.",
         "analysis": {
             "emotions": {
-                "sadness": 0.525,
+                "sadness": 0.0,
+                "joy": 0.2625,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.2625,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Muito obrigado por compartilhar seu conhecimento professor",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.525,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.525,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Como ficaria o while em classe?",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
                 "joy": 0.0,
                 "fear": 0.0,
-                "disgust": 1.0,
-                "anger": 0.7875
+                "disgust": 0.0,
+                "anger": 0.0
             },
             "sentiment": {
-                "score": -0.7875,
-                "label": "NEGATIVE"
+                "score": 0.0,
+                "label": "NEUTRAL"
             }
         }
     },
     {
-        "comment": "Que receita maravilhosa eu amo tapioca mais essa eu não sabia eu faço sempre crepioca obrigada bjoss fica com Deus",
+        "comment": "como eu consigo usar o while em str se eu usar número por exemplo.<br><br>tipo :<br><br>n = str(input(&#39;qual seu nome?)) se eu digitar numero int, o processa encerra.<br><br>queria saber como que eu faço pra ele repetir o looping se eu digitar um numero por exemplo.",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.525,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.525,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Massa. Tanto para começar como para revisar conceitos iniciais",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "Mudei a calculaladora para ficar mais dinamica<br><br> # montando uma claculadora\r<br>\r<br>while True:\r<br>\r<br>  num_1 = input(&#39;Digite um numero &#39;)\r<br>  operador = input(&#39;Digite um operador ( + , - , /, *) &#39;)\r<br>  num_2 = input(&#39;Digite mais um numero &#39;)\r<br>  num_1 = int(num_1)\r<br>  num_2 = int(num_2)\r<br>  \r<br>  if operador == &#39;+&#39;:\r<br>    print(f&#39;A soma total è: {num_1 + num_2}&#39;)\r<br>    continuar = input(&#39;Vc deseja continuar? Digite (s) para sair e (c) para continuar &#39;)\r<br>\r<br>    if continuar == &#39;c&#39;:\r<br>      continue\r<br>\r<br>    else:\r<br>      print()\r<br>      print(&#39;Calculadora Desligada, aperte (play) para ligar novamente&#39;)\r<br>      break \r<br>    \r<br>\r<br>  elif operador ==  &#39;-&#39;:\r<br>    print(f&#39;A adiçaõ total é: {num_1 - num_2}&#39;)\r<br>    continuar = input(&#39;Vc deseja continuar? Digite (s) para sair e (c) para continuar &#39;)\r<br>\r<br>    if continuar == &#39;c&#39;:\r<br>      continue\r<br>\r<br>    else:\r<br>      print()\r<br>      print(&#39;Calculadora Desligada, aperte (play) para ligar novamente&#39;)\r<br>      break \r<br>\r<br>  elif operador == &#39;/&#39;:\r<br>    print(f&#39;A divisão total é: {num_1 / num_2}&#39;)\r<br>    continuar = input(&#39;Vc deseja continuar? Digite (s) para sair e (c) para continuar &#39;)\r<br>\r<br>    if continuar == &#39;c&#39;:\r<br>      continue\r<br>\r<br>    else:\r<br>      print()\r<br>      print(&#39;Calculadora Desligada, aperte (play) para ligar novamente&#39;)\r<br>      break \r<br>\r<br>  elif operador == &#39;*&#39;:\r<br>    print(f&#39;A multiplicação total é: {num_1 * num_2}&#39;)\r<br>    continuar = input(&#39;Vc deseja continuar? Digite (s) para sair e (c) para continuar &#39;)\r<br>\r<br>    if continuar == &#39;c&#39;:\r<br>      continue\r<br>\r<br>    else:\r<br>      print()\r<br>      print(&#39;Calculadora Desligada, aperte (play) para ligar novamente&#39;)\r<br>      break",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "Vale a pena comprar o curso, melhor que ficar buscando pedaços de videos na internet, outra coisa leiam livros e assistam mini cursos em inglês sobre o assunto, MIT tem vários gratuitos.",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.49875,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.49875,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "mano, você me salvou!",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.9375,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.9375,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Parabéns pelas aulas!!!!!!",
         "analysis": {
             "emotions": {
                 "sadness": 0.0,
@@ -433,7 +545,7 @@
         }
     },
     {
-        "comment": "Parece muito gostoso",
+        "comment": "Estou iniciando no python, depois vou pensar em migrar para outra linguagem.<br>Mas primeiro, aprender somente 1. <br>Aula Top demais... Parabéns!",
         "analysis": {
             "emotions": {
                 "sadness": 0.0,
@@ -449,23 +561,7 @@
         }
     },
     {
-        "comment": "Amei essa receita!<br>Prática e fácil!<br>Obrigada amada.<br>Bjos",
-        "analysis": {
-            "emotions": {
-                "sadness": 0.0,
-                "joy": 0.8,
-                "fear": 0.0,
-                "disgust": 0.0,
-                "anger": 0.0
-            },
-            "sentiment": {
-                "score": 0.8,
-                "label": "POSITIVE"
-            }
-        }
-    },
-    {
-        "comment": "Muito bom",
+        "comment": "Parabéns pelo vídeo, excelente professor!!!",
         "analysis": {
             "emotions": {
                 "sadness": 0.0,
@@ -481,7 +577,23 @@
         }
     },
     {
-        "comment": "Adorei vou tentar fazer ❤",
+        "comment": "@Otávio Miranda, pelo jeito você é um cara experiente na programação, por isso te faço uma pergunta: Pra quem usa o Python como linguagem de programação, achas que o Pycharm é melhor que o vscode? Vi que em outros videos você usa o vscode. Na sua opinião que é um experiente programador, qual seria o melhor pra ser usado dos dois? Obrigado.",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.285,
+                "joy": 0.7,
+                "fear": 0.0,
+                "disgust": 0.1425,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.525,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Muito legal,  gratidão.",
         "analysis": {
             "emotions": {
                 "sadness": 0.0,
@@ -497,18 +609,34 @@
         }
     },
     {
-        "comment": "Que delícia 😋",
+        "comment": "Boa tarde, só pra constar... Você não é o Saidera? ou É.<br>A vós e o jeito de falar lembra muito... desculpa ai!!!!",
         "analysis": {
             "emotions": {
                 "sadness": 0.0,
-                "joy": 0.6125,
+                "joy": 0.778125,
                 "fear": 0.0,
                 "disgust": 0.0,
                 "anger": 0.0
             },
             "sentiment": {
-                "score": 0.6125,
+                "score": 0.778125,
                 "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "obrigada",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
             }
         }
     }
