@@ -1,0 +1,21 @@
+Video,Comment,Sadness,Joy,Fear,Disgust,Anger,Score,Label
+https://www.youtube.com/watch?v=iFYWrDMfVNo,estou fazendo um curso e tudo que é apresentado no curso eu só entendo pesquisando no youTobas!,0.0,0.5208333333333334,0.0,0.0,0.0,0.5208333333333334,POSITIVE
+https://www.youtube.com/watch?v=iFYWrDMfVNo,Bom vídeo. Vc fala igual ao Ken humano kkk,0.0,0.6125,0.0,0.0,0.0,0.6125,POSITIVE
+https://www.youtube.com/watch?v=iFYWrDMfVNo,cara você explicou bem mais facil que meu professor de faculdade haha,0.0,1.0,0.0,0.0,0.0,1.0,POSITIVE
+https://www.youtube.com/watch?v=iFYWrDMfVNo,Muito bom vídeo aula muito intuitiva sem enrrolação !!,0.0,1.0,0.0,0.0,0.0,1.0,POSITIVE
+https://www.youtube.com/watch?v=iFYWrDMfVNo,Adorei,0.0,1.0,0.0,0.0,0.0,1.0,POSITIVE
+https://www.youtube.com/watch?v=iFYWrDMfVNo,vc explica muito bem,0.0,0.65625,0.0,0.0,0.0,0.65625,POSITIVE
+https://www.youtube.com/watch?v=iFYWrDMfVNo,Uma dúvida  como posso fazer uma repetição de strings utilizando o input com while? Cmg sempre da erro -(  obrigado pelo video!,0.0,0.625,0.0,0.0,0.0,0.625,POSITIVE
+https://www.youtube.com/watch?v=iFYWrDMfVNo,O amigo  gostei da sua explicação!,0.0,0.9375,0.0,0.0,0.0,0.9375,POSITIVE
+https://www.youtube.com/watch?v=iFYWrDMfVNo,Você ensinamuito bem... Se dependesse de alguns professores da Udemy ficaria BEM complicado.,1.0,0.0,0.525,0.525,0.525,-1.0,NEGATIVE
+https://www.youtube.com/watch?v=iFYWrDMfVNo,Obrigada por disponibilizar esse vídeo  espero que você dê procedimento a playlist de python. =],0.0,0.4375,0.0,0.0,0.0,0.4375,POSITIVE
+https://www.youtube.com/watch?v=iFYWrDMfVNo,Como colocar contador para parar um resultado string? Tipo: <br>m = &#39;masculino&#39;<br>f = &#39;feminino&#39;<br>while sexo != masculino or sexo != feminino:<br>Print  (&#39;Inválido. Tente de novo.&#39;),0.0,0.9166666666666666,0.0,0.0,0.0,0.9166666666666666,POSITIVE
+https://www.youtube.com/watch?v=iFYWrDMfVNo,ótima metodologia de ensino!!! ensinou muito bem  entendi tudo  obrigado!! +1 inscrito,0.0,0.7416666666666667,0.0,0.0,0.0,0.7416666666666667,POSITIVE
+https://www.youtube.com/watch?v=iFYWrDMfVNo,muito bom   sanou minhas dúvidas,0.0,0.7875,0.0,0.0,0.0,0.7875,POSITIVE
+https://www.youtube.com/watch?v=iFYWrDMfVNo,E com string como ficaria???,0.0,0.0,0.0,0.0,0.0,0.0,NEUTRAL
+https://www.youtube.com/watch?v=iFYWrDMfVNo,obrigada!,0.0,0.0,0.0,0.0,0.0,0.0,NEUTRAL
+https://www.youtube.com/watch?v=iFYWrDMfVNo,Cara  eu adorei que você errou algumas vezes  porque são os erros que nós que estamos aprendendo cometemos  de quebra você já ensina também o que pode estar errado quando esses erros são cometidos.,0.1455,0.515,0.1455,0.0,0.1455,0.2725,MIXED
+https://www.youtube.com/watch?v=iFYWrDMfVNo,Obrigado!,0.0,0.625,0.0,0.0,0.0,0.625,POSITIVE
+https://www.youtube.com/watch?v=iFYWrDMfVNo,Salvou... tinha travado no while e no for e vc me ajudou muito a destravar.,0.0,0.65625,0.0,0.0,0.0,0.65625,POSITIVE
+https://www.youtube.com/watch?v=iFYWrDMfVNo,pq a condicao a seguir demonstra falha?<br><br>x= float(input(digite um numero))<br><br>while x != float:<br>      print(valor invalido  insira valor valido)<br>       x= float(input(digite um numero)),0.525,0.0,0.0,0.0,0.7875,-0.7875,NEGATIVE
+https://www.youtube.com/watch?v=iFYWrDMfVNo,muito bom,0.0,1.0,0.0,0.0,0.0,1.0,POSITIVE
