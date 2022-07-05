@@ -1,5 +1,5 @@
-import main
-
+import modelo1
+import modelo2
 
 def videos():
     v = 0
@@ -44,7 +44,7 @@ def videos():
 
     while v < len(url):
            try:
-               main.inicio(url[v])
+               modelo1.inicio(url[v])
                print(v+1,"Sucesso no vídeo:", url[v])
            except:
                print(v+1,"Erro no vídeo:", url[v])
