@@ -1,28 +1,29 @@
-import os
-import folium
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-import numpy as np
-from folium.plugins import HeatMap
-from geopy.geocoders import Nominatim
-def inicio():
-    # with open('resultado.csv') as f:
-    #     print(f)
 
-    df = pd.read_csv("resultado.csv", encoding='cp1250', nrows=5)
+def inicio():
+    df = pd.read_csv("resultado.csv", delimiter=';', encoding='cp1250')
     df.head()
 
-    df_2 = df.select_dtypes(exclude='object')
-    df_2.head()
 
-    sns.heatmap(df_2.corr())
+    # df2 = df.loc[:, 'Densidade semântica 1:':'Resumo']
+    df2 = df;
+    df2.head()
+
+
+    df2.corr()
+
+
+
+    df2.corr().style.background_gradient(cmap='Blues')
+    sns.heatmap(df2.corr())
 
 
 
     fig, ax = plt.subplots(figsize=(12, 8))
 
-    _ = sns.heatmap(df_2.corr(), cmap='Blues', linewidth=0.5, annot=True)
+    _ = sns.heatmap(df2.corr(), cmap='Blues', linewidth=0.5, annot=True)
 
 if __name__ == '__main__':
     inicio()

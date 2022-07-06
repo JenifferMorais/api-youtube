@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fe6cff0-dd38-4f7f-aa50-cd1a1f883718" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Mapa de calor/map.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backup/ResultadoFinal.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Backup/ResultadoFinal.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mapa de calor/map.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mapa de calor/map.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mapa de calor/resultado.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Mapa de calor/resultado.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,6 +188,11 @@
           <url>file://$PROJECT_DIR$/modelo2.py</url>
           <line>89</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Mapa de calor/map.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
