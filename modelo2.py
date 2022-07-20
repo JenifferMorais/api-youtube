@@ -19,14 +19,14 @@ def video_comments(url_video):
 
     youtube = build('youtube', 'v3', developerKey=DEVELOPER_KEY)
     video_response = youtube.commentThreads().list(
-        part='snippet,replies', videoId=video_id).execute()
+        part='snippet,replies',maxResults=100, videoId=video_id).execute()
 
     while video_response:
         for item in video_response['items']:
             comment = item['snippet']['topLevelComment']['snippet']['textDisplay']
             analysis(comment)
             if 'nextPageToken' in video_response:
-              video_response = youtube.commentThreads().list(part='snippet, replies', videoId= video_id).execute()
+              video_response = youtube.commentThreads().list(part='snippet, replies', videoId=video_id).execute()
         else:
             break
 
@@ -39,6 +39,7 @@ def analysis(comment):
         b"2274-jVwH/V0Q:gq3STLhSz2IY3Bey+btyOmN7xpo+HuK5kSRtLK+/").decode("ascii")
     headers = {'Content-type': 'application/json', "Authorization": "Basic %s" % userAndPass}
     response = requests.post(url, data=data_json, headers=headers)
+    print(comment, '\n', dict(response.json())['sentiment']['label'], end=('\n' * 2))
 
     dictionary = {"comment": comment, "analysis": response.json()}
     analysis_list.append(dictionary)
@@ -84,7 +85,7 @@ def write(url_video):
 def inicio(url_video):
     video_comments(url_video)
     # Escreve arquivo csv somente com as emoções
-    write(url_video)
+    #write(url_video)
     clear()
 
 if __name__ == '__main__':
@@ -92,6 +93,6 @@ if __name__ == '__main__':
        # url_video = input("Link do Vídeo? ")
        # if(url_video == 0):
        #     x = False
-    url_video= ("https://www.youtube.com/watch?v=_PZldwo0vVo")
+    url_video= ("https://www.youtube.com/watch?v=eJO62WkGzcU")
     inicio(url_video)
 

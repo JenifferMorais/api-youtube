@@ -18,7 +18,7 @@ def video_comments(url_video):
 
     youtube = build('youtube', 'v3', developerKey=DEVELOPER_KEY)
     video_response = youtube.commentThreads().list(
-        part='snippet,replies', videoId=video_id).execute()
+        part='snippet,replies',maxResults=100, videoId=video_id).execute()
 
     while video_response:
         for item in video_response['items']:
@@ -37,7 +37,7 @@ def analysis(comment):
         b"2274-jVwH/V0Q:gq3STLhSz2IY3Bey+btyOmN7xpo+HuK5kSRtLK+/").decode("ascii")
     headers = {'Content-type': 'application/json', "Authorization": "Basic %s" % userAndPass}
     response = requests.post(url, data=data_json, headers=headers)
-    # print(comment, '\n', dict(response.json())['sentiment']['label'], end=('\n' * 2))
+    print(comment, '\n', dict(response.json())['sentiment']['label'], end=('\n' * 2))
 
     dictionary = {"comment": comment, "analysis": response.json()}
     analysis_list.append(dictionary)
