@@ -1,0 +1,1602 @@
+Vídeo:https://www.youtube.com/watch?v=EGmlFdwD4C4[
+    {
+        "comment": "matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]\r<br>for l in range(0, 3):\r<br>    for c in range(0, 3):\r<br>        matriz[l][c] =int(input(f&#39;Digite um valor para {l}, {c} &#39;))\r<br>print(f&#39;[ {matriz[0][0]} ] [ {matriz[0][1]} ] [ {matriz[0][2]} ]&#39;)\r<br>print(f&#39;[ {matriz[1][0]} ] [ {matriz[1][1]} ] [ {matriz[1][2]} ]&#39;)\r<br>print(f&#39;[ {matriz[2][0]} ] [ {matriz[2][1]} ] [ {matriz[2][2]} ]&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "val = []\r<br>matr = []\r<br>\r<br>for y in range(0, 3):\r<br>    for x in range(0, 3):\r<br>        n = int(input(f&#39;Valor [{y}, {x}] --&gt; &#39;))\r<br>        val.append(n)\r<br>        matr.append(val[:])\r<br>        val.clear()\r<br>print(&#39;- &#39; * 30)\r<br>print(&#39;Matriz final: &#39;)\r<br>for pos, e in enumerate(matr):\r<br>    print(f&#39;{e}&#39;, end=&#39;&#39;)\r<br>    if (pos + 1) % 3 == 0:\r<br>        print()",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "\\o/ 9 LINHAS SEM VER A SOLUÇÃO DO PROFESSOR!!!!!!!!!!!!!!!!!!!!!!!!!!!<br><br>matriz = [[], [], []]<br><br>for c in range(0, 3):<br>    for x in range(0, 3):<br>        num = int(input(f&#39;Digite um valor para {[c, x]}: &#39;))<br>        matriz[c].insert(x, num)<br><br>for c in range(0, 3):<br>    for x in range(0, 3):<br>        print(f&#39;[{matriz[c][x]: ^5}]&#39;, end=&#39;&#39;)<br>    print(&#39;&#39;)<br><br><br>\\o/ VITÓRIA DO POVO BRASILEIRO!!!",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.45,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.45,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "nums = []\r<br>for i in range(0, 3):\r<br>    for j in range(0, 3):\r<br>        nums.append(int(input(f&#39;Valor para [{i}, {j}]: &#39;)))\r<br>\r<br>for flag, i in enumerate(nums):\r<br>    print(f&#39;[ {i:^10} ]&#39;, end=&#39;&#39;)\r<br>    if (flag + 1) % 3 == 0:\r<br>        print()\r<br>\r<br># Exercicio ex087 mostra uma forma diferente de criar a matriz com uma lista por linha.<br><br>nums = []\r<br>for i in range(0, 3):\r<br>    nums.append([]) # Isso vai criar uma lista para cada linha automaticamente. Se fizer o 3 ali como uma  variável, dá pra perguntar o número de lin e col, se quiser\r<br>    for j in range(0, 3):\r<br>        nums[i].append(int(input(f&#39;Valor para [{i}, {j}]: &#39;)))<br>.<br>.<br>.",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.525,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.525,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "estou com pronlemas na quebra de linha nenhum desses END=&#39;&#39; funciona ... sera que é a versão do Pycharm???",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.7875,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.7875,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Sinceramente, não que eu queira me gabar, mas eu não senti dificuldade nesse exercício",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.525,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.525,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "matrix = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]\r<br>m = 0\r<br>for l in range(0, 3):\r<br>    for c in range(0, 3):\r<br>        <a href=\"http://www.youtube.com/results?search_query=%23design\">#Design</a>\r<br>        if m%2 == 0:\r<br>            print(&#39;\\033[34m&#39;, end=&#39;&#39;)\r<br>        else:\r<br>            print(&#39;\\033[35m&#39;, end=&#39;&#39;)\r<br>        m += 1\r<br>        <a href=\"http://www.youtube.com/results?search_query=%23design\">#Design</a>\r<br>        a = (int(input(f&#39;Digite o valor de [{l}, {c}]: &#39;)))\r<br>        matrix[l][c] = a\r<br>print(&#39;\\033[35m-=&#39;*30)\r<br>for d in range(0, 3):\r<br>    print(f&#39;\\033[34m[{matrix[d][0]:^5}]&#39;, end=&#39;&#39;)\r<br>    print(f&#39;\\033[35m[{matrix[d][1]:^5}]&#39;, end=&#39;&#39;)\r<br>    print(f&#39;\\033[34m[{matrix[d][2]:^5}]&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "dados = []\r<br>lista = []\r<br>k = cont = 0\r<br>\r<br>for c in range(0, 3):\r<br>    for i in range (0,3):\r<br>        num = int(input(f&#39;Digite um valor para [{c}, {i}]: &#39;))\r<br>        dados.append(num)\r<br>        lista.append(dados[:])\r<br>        dados.clear()\r<br>print(&#39;-=&#39;*23)\r<br>\r<br>for elemento in lista:\r<br>    print(f&#39;[ {elemento[0]} ]&#39;, end=&#39;   &#39;)\r<br>    k+=1\r<br>    if k == 3:\r<br>        print(&#39;&#39;)\r<br>        k = 0",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "Bom desse jeito eu conseguir visualizar a matriz melhor😅:\r<br><br>print(&#39;=&#39;*40)\r<br>print(f&#39;{&quot;Matriz em Python&quot;:^40}&#39;)\r<br>print(&#39;=&#39;*40)\r<br>matriz = [[[], [], []],\r<br>          [[], [], []],\r<br>          [[], [], []]]\r<br>for linha in range(0, 3):\r<br>    for coluna in range(0, 3):\r<br>        matriz[linha][coluna].append(int(input(f&#39;Digite um valor para [{linha}, {coluna}]: &#39;)))\r<br>print(&#39;=&#39;*40)\r<br>for linha in range(0, 3):\r<br>    for coluna in range(0, 3):\r<br>        print(f&#39;[{matriz[linha][coluna][0]:^4}]&#39;, end=&#39;&#39;)\r<br>    print()",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.6125,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.6125,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Crie a função multiplica_matriz(mat1, mat2) que deve retornar o produto de duas<br>matrizes bidimensionais genéricas, sem alterar as matrizes originais. A função deve<br>imprimir uma mensagem de erro e retornar um vetor vazio ([]) caso não for possível<br>realizar o produto das duas matrizes. Alguém sabe?",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.3875,
+                "joy": 0.46875,
+                "fear": 0.31,
+                "disgust": 0.31,
+                "anger": 0.155
+            },
+            "sentiment": {
+                "score": 0.27708333333333335,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Minha solução - Usando append: <br>\r<br>mat = [[], [], []]\r<br>for x in range(0,3):\r<br>    for y in range(0,3):\r<br>        mat[x].append(int(input(&#39;Digite um valor para [{x}, {y}]: &#39;)))\r<br>print(&#39;=-&#39; * 30)\r<br>for x in range(0, 3):\r<br>    for y in range(0, 3):\r<br>        print(f&#39;[{mat[x][y]:^5}]&#39;, end=&#39;&#39;)\r<br>    print(&#39;&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "o meu ficou feião KKKKKKKKKKKKKK<br>lista =  [[],[],[]]\r<br>lista2 = [[],[],[]]\r<br>lista3 = [[],[],[]]\r<br>for c in range(0,3):\r<br>    valor = int(input(f&#39;Digite um valor [0 , {c}]: &#39;))\r<br>    lista[c].append(valor)\r<br>    if c == 2:\r<br>        for c1 in range(0,3):\r<br>            valor1 = int(input(f&#39;Digite um valor [1 , {c1}]: &#39;))\r<br>            lista2[c1].append(valor1)\r<br>            if c1 == 2:\r<br>                for c2 in range(0,3):\r<br>                    if c == 2:\r<br>                        valor2 = int(input(f&#39;Digite um valor [{c1} , {c2}]: &#39;))\r<br>                        lista3[c2].append(valor2)\r<br>print(&#39;+-+-+&#39;*20)\r<br>print(lista)\r<br>print(lista2)\r<br>print(lista3)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "kakakakakakakakakk eu vendo que ta muito menor que a minha solução:<br>numeros = [[], [], [], [], [], [], [], [], []]\r<br>cont = 0\r<br>contb = 0\r<br>a = 0\r<br>for c in range(0, 9):\r<br>    if c == 0:\r<br>        numeros[c].append(int(input(&#39;digite um valor para[0,0] &#39;)))\r<br>    else:\r<br>        if 0 &lt; c &lt;3:\r<br>            numeros[c].append(int(input(f&#39;digite um valor para[0,{c}] &#39;)))\r<br>        if c == 3:\r<br>            numeros[c].append(int(input(f&#39;digite um valor paara[1,0] &#39;)))\r<br>        if 3 &lt; c &lt; 6:\r<br>            cont += 1\r<br>            numeros[c].append(int(input(f&#39;digite um valor para[1,{cont}] &#39;)))\r<br>        if c == 6:\r<br>            numeros[c].append(int(input(&#39;digite um valor para[2,0] &#39;)))\r<br>        if 6 &lt; c &lt; 9:\r<br>            contb += 1\r<br>            numeros[c].append(int(input(f&#39;digite um valor para[2,{contb}]&#39;)))\r<br>print(f&#39;{numeros[0:3]}&#39;)\r<br>print(f&#39;{numeros[3:6]}&#39;)\r<br>print(f&#39;{numeros[6:9]]&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.2625,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.2625,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Esse foi bem fácil de fazer porque eu fiz o curso de algoritmo e la ensinou matrizes e até a criar um jogo da VELHA.<br>matriz = list()\r<br>for linha in range(3):\r<br>    line = list()\r<br>    for coluna in range(3):\r<br>        line.append(int(input(f&#39;Digite um número na posição [{linha}][{coluna}]: &#39;)))\r<br>    matriz.append(line)\r<br>for linha in range(3):\r<br>    for coluna in range(3):\r<br>        print(f&#39;[ {matriz[linha][coluna]:^3} ]&#39;, end=&#39;&#39;)\r<br>    print(&#39;\\n&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.433125,
+                "joy": 0.778125,
+                "fear": 0.0,
+                "disgust": 0.28875,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.05625,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "A quantidade de vezes que escrevi  &quot;matrix&quot; nessa aula é brincadeira....  rsrs",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.2625,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.2625,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Kurta  , qualquer dúvida me pergunte<br><br>  lines = []<br>  columns = []<br>  for i in range(0,3):<br>    for j in range(0,3):<br>      lines.append(float(input(f&#39;Type a value [{i},{j}]: &#39;))) # não posso colocar diretamente em columns...?... <a href=\"http://www.youtube.com/results?search_query=%23n%C3%A3o\">#não</a> porque quero 3 listas# ... assim já divide listas com 3 elementos<br>    columns.append(lines) <br>    lines = []<br><br>  for k in range(0,3):<br>    print(&#39;-&#39;*13)<br>    for l in range(0,3): <br>      if l==0:<br>        print(&#39;|&#39;, end=&#39;&#39;) <br>      print(columns[k][l], sep=&#39;\\n&#39;, end=&#39;|&#39;)<br>    print(&#39;&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "list = [ [],  [],   []]\r<br>\r<br>print(&#39;+=&#39; * 30)\r<br>for c in range(1,4):\r<br>    list[0].append(int(input(f&#39;Digite o {c}º numero da 1ª Coluna: &#39;)))\r<br>for c in range(1,4):\r<br>    list[1].append(int(input(f&#39;Digite o {c}º numero da 2ª Coluna: &#39;)))\r<br>for c in range(1,4):\r<br>    list[2].append(int(input(f&#39;Digite o {c}º numero da 3ª Coluna: &#39;)))\r<br>print(&#39;+=&#39; * 30)\r<br>print(f&#39;[{list[0][0]:^5}]&#39;,end=&quot; &quot;)\r<br>print(f&#39;[{list[0][1]:^5}]&#39;,end=&quot; &quot;)\r<br>print(f&#39;[{list[0][2]:^5}]&#39;)\r<br>print(f&#39;[{list[1][0]:^5}]&#39;,end=&quot; &quot;)\r<br>print(f&#39;[{list[1][1]:^5}]&#39;,end=&quot; &quot;)\r<br>print(f&#39;[{list[1][2]:^5}]&#39;)\r<br>print(f&#39;[{list[2][0]:^5}]&#39;,end=&quot; &quot;)\r<br>print(f&#39;[{list[2][1]:^5}]&#39;,end=&quot; &quot;)\r<br>print(f&#39;[{list[2][2]:^5}]&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "Demorei um pouco mas saiu:<br>m1 = list()\r<br>m2 = list()\r<br>m3 = list()\r<br>cont1 = cont2 = cont4 = 0\r<br>while cont2 &lt; 3:\r<br>    n = int(input(f&#39;Insira a posição [{cont1}] [{cont2}]: &#39;))\r<br>    cont2 += 1\r<br>    cont4 += 1\r<br>    if cont4 &lt; 4 and cont1 == 0:\r<br>        m1.append(n)\r<br>    if cont4 &lt; 6 and cont1 == 1:\r<br>        m2.append(n)\r<br>    if cont4 &lt; 9 and cont1 == 2:\r<br>        m3.append(n)\r<br>    if cont2 &gt; 2 and cont1 == 0:\r<br>        cont2 = 0\r<br>        cont1 = 1\r<br>        n = int(input(f&#39;Insira a posição [{cont1}] [{cont2}]: &#39;))\r<br>        if cont1 == 1:\r<br>            m2.append(n)\r<br>        cont2 += 1\r<br>    if cont2 &gt; 2 and cont1 == 1:\r<br>        cont2 = 0\r<br>        cont1 = 2\r<br>        n = int(input(f&#39;Insira a posição [{cont1}] [{cont2}]: &#39;))\r<br>        cont2 += 1\r<br>        m3.append(n)\r<br>print(f&#39;&#39;&#39;A sua matriz é:\r<br>[{m1[0]}] [{m1[1]}] [{m1[2]}]\r<br>[{m2[0]}] [{m2[1]}] [{m2[2]}]\r<br>[{m3[0]}] [{m3[1]}] [{m3[2]}]&#39;&#39;&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.7875,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.2625,
+                "anger": 0.2625
+            },
+            "sentiment": {
+                "score": -0.7875,
+                "label": "NEGATIVE"
+            }
+        }
+    },
+    {
+        "comment": "Eu queria ter pensado num código enxuto assim. rs<br>O meu deu 20 linhas.<br><br>lista = []\r<br>d1 = []\r<br>d2 = []\r<br>d3 = []\r<br>cont = cont1 = cont2 = 0\r<br>for c in range(0, 3):\r<br>    d1.append(int(input(f&#39;Digite um valor para 0-{cont}: &#39;)))\r<br>    cont += 1\r<br>for c in range(0, 3):\r<br>    d2.append(int(input(f&#39;Digite um valor para 1-{cont1}: &#39;)))\r<br>    cont1 += 1\r<br>for c in range(0, 3):\r<br>    d3.append(int(input(f&#39;Digite um valor para 2-{cont2}: &#39;)))\r<br>    cont2 += 1\r<br>lista.append(d1[:])\r<br>lista.append(d2[:])\r<br>lista.append((d3[:]))\r<br>print(f&#39;&#39;&#39;[{lista[0][0]:^5}] [{lista[0][1]:^5}] [{lista[0][2]:^5}]\r<br>[{lista[1][0]:^5}] [{lista[1][1]:^5}] [{lista[1][2]:^5}]\r<br>[{lista[2][0]:^5}] [{lista[2][1]:^5}] [{lista[2][2]:^5}]&#39;&#39;&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.525,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.525,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Ótimo vídeo!",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.9375,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.9375,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Minha versão ficou grande porque quis fazer ficar alinhado mesmo colocando números exorbitantemente grandes, se você colocar valores na matriz como 10000000 e 0 ainda vai ficar alinhada.<br><br><br>fileira = []\r<br>linha = []\r<br>for c in range(0, 3):\r<br>    for v in range(0, 3):\r<br>        val = int(input(&#39;Valor: &#39;))\r<br>        linha.append(val)\r<br>    fileira.append(linha[:])\r<br>    linha.clear()\r<br>\r<br>\r<br><a href=\"http://www.youtube.com/results?search_query=%23pega\">#Pega</a> o tamanho do maior número\r<br>maior = 0\r<br>for a in fileira:\r<br>    for b in a:\r<br>        if len(str(b)) &gt; maior:\r<br>            maior = len(str(b))\r<br>\r<br>for f in fileira:\r<br>    for p, l in enumerate(f):\r<br>        <a href=\"http://www.youtube.com/results?search_query=%23printa\">#Printa</a> o número alinhado de forma centralizada a (tamanho do maior número + 3)\r<br>        print(end=f&#39;[ {l: ^{maior + 3}}]&#39;)\r<br>    print()",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.39375,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.39375,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "<a href=\"about:invalid#zCSafez\"></a>",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "Fiz assim e funcionou :)<br><br>matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]\r<br>\r<br>for i in range(0, 3):\r<br>    for j in range(0, 3):\r<br>        matriz[i][j] = int(input(f&#39;VALOR PARA [{i}, {j}]: &#39;))\r<br>\r<br>for l in matriz:\r<br>    print(f&#39;{l}&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.7875,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.7875,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Eu fiz três for kkkkk mas deu certo e não ficou embolado pelo menos kkk",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.525,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.525,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Usei uma lógica diferente da do professor...<br><br>matriz = []<br>cont = 0<br>zero = 0<br>for p, v in enumerate(range(0, 9)):<br>  matriz.append(int(input(f&quot;Digite um valor para [{zero}, {cont}]: &quot;)))<br>  cont += 1<br>  if cont == 3:<br>    cont = 0<br>  if p == 2:<br>    zero = 1<br>  if p == 5:<br>    zero = 2<br>print(f&quot;[ {matriz[0]:^5} ] [ {matriz[1]:^5} ] [ {matriz[2]:^5} ]&quot;)<br>print(f&quot;[ {matriz[3]:^5} ] [ {matriz[4]:^5} ] [ {matriz[5]:^5} ]&quot;)<br>print(f&quot;[ {matriz[6]:^5} ] [ {matriz[7]:^5} ] [ {matriz[8]:^5} ]&quot;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "Eu tinha feito com o append, mais por uma questão didática! Me embolei no fim kkkkkkkkkkkkkkkkkk Mas cheguei perto",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.3125,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.3125,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "A minha ficou uma porcaria comparada com a do Guanabara mas funciona:<br>obs: os traços e os espaços são para indicar as coordenadas de forma organizada<br><br>lista1 = [[], [], []]\r<br>lista2 = [[], [], []]\r<br>lista3 = [[], [], []]\r<br>for c in range(0, 3):\r<br>    x = int(input(f&#39;Digite um valor para [0, {c}]: &#39;))\r<br>    if c == 0:\r<br>        lista1[0].append(x)\r<br>    elif c == 1:\r<br>        lista1[1].append(x)\r<br>    elif c == 2:\r<br>        lista1[2].append(x)\r<br>for p in range(0, 3):\r<br>    x = int(input(f&#39;Digite um valor para [1, {p}]: &#39;))\r<br>    if p == 0:\r<br>        lista2[0].append(x)\r<br>    elif p == 1:\r<br>        lista2[1].append(x)\r<br>    elif p == 2:\r<br>        lista2[2].append(x)\r<br>for k in range(0, 3):\r<br>    x = int(input(f&#39;Digite um valor para [2, {k}]: &#39;))\r<br>    if k == 0:\r<br>        lista3[0].append(x)\r<br>    elif k == 1:\r<br>        lista3[1].append(x)\r<br>    elif k == 2:\r<br>        lista3[2].append(x)\r<br>print(&#39;=&#39; * 33)\r<br>print(&#39;      0    1    2\\n      —    —    —&#39;)\r<br>print(&#39;0 | &#39;, end=&#39;&#39;)\r<br>print(lista1)\r<br>print(&#39;1 | &#39;, end=&#39;&#39;)\r<br>print(lista2)\r<br>print(&#39;2 | &#39;, end=&#39;&#39;)\r<br>print(lista3)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.6125,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.6125,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "n o exercicio que meu professor n tem aqui kkkkk",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "matriz=[[],[],[]]\r<br>\r<br>for cont in matriz:\r<br>    for cont2 in range(0,3):\r<br>        cont.append(int(input(&#39;Digite um algarismo: &#39;)))\r<br>print(matriz)\r<br>for cont in matriz:\r<br>    for cont2 in range(0,3):\r<br>        print(f&#39;{cont[cont2]}&#39;, end=&#39;\\t&#39;)\r<br>    print(&#39;&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "eu fiz de uma forma diferente do guanabara mas rodou igual:<br><br>lista = [[], [], [], [], [], [], [], [], []]\r<br>for c in range (0, 9):\r<br>        if c &lt;= 2:\r<br>            lista[c].append(int(input(f&#39;Digite um valor para [0, {c}]: &#39;)))\r<br>        elif c &lt;= 5:\r<br>            lista[c].append(int(input(f&#39;Digite um valor para [1, {c-3}]: &#39;)))\r<br>        elif c &lt;= 9:\r<br>            lista[c].append(int(input(f&#39;Digite um valor para [2, {c-6}]: &#39;)))\r<br>for c in range (0, 9):\r<br>    print(f&#39;{lista[c]}&#39;, end=&#39;&#39;)\r<br>    if c == 2 or c == 5 or c == 9:\r<br>        print()",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "Caramba professor o senhor transcendeu na resolução desse exercício 😳",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.2625,
+                "joy": 0.0,
+                "fear": 0.2625,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": -0.2625,
+                "label": "NEGATIVE"
+            }
+        }
+    },
+    {
+        "comment": "Gostei bastante do meu código o exercício era médio só me confundi um pouco enquanto escrevia mais é bem fácil de entender :D<br>↓<br>matriz = [[], [], []]<br><br>for a in range (0,3):<br>    elemento = int(input(f&#39;digite um valor para [[0][{a}]]: &#39;))<br>    matriz[0].insert(a, elemento)<br><br><br>for b in range (0,3):<br>    elemento = int(input(f&#39;digite um valor para [[1][{b}]]: &#39;))<br>    matriz[1].insert(b, elemento)<br><br>    <br>for c in range (0,3):<br>    elemento = int(input(f&#39;digite um valor para [[2][{c}]]: &#39;))<br>    matriz[2].insert(c, elemento)<br>   <br>print()<br>for e in range (0, len(matriz[0])):<br>    print(f&#39;[ {matriz[0][e]} ] &#39;, end=&#39;&#39;)<br><br>print()<br>for e in range (0, len(matriz[1])):    <br>    print(f&#39;[ {matriz[1][e]} ] &#39;,end=&#39;&#39;)<br><br>print()<br>for e in range (0, len(matriz[2])):<br>    print(f&#39;[ {matriz[2][e]} ] &#39;,end=&#39;&#39;)<br><br>print()",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 1.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 1.0,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Depois de um tempão estudando esse código, consegui modificar ele para poder pedir a quantidade de linhas e colunas. Coloquei comentários nas modificações :)<br><br>𝚖𝚊𝚝𝚛𝚒𝚣 = 𝚕𝚒𝚜𝚝()\r<br>𝚕𝚒𝚗𝚑𝚊𝚜 = 𝚒𝚗𝚝(𝚒𝚗𝚙𝚞𝚝(&#39;𝚀𝚞𝚊𝚗𝚝𝚊𝚜 𝚕𝚒𝚗𝚑𝚊𝚜: &#39;)) <a href=\"http://www.youtube.com/results?search_query=%23pede\">#pede</a> a quantidade de linhas\r<br>𝚌𝚘𝚕𝚞𝚗𝚊𝚜 = 𝚒𝚗𝚝(𝚒𝚗𝚙𝚞𝚝(&#39;𝚀𝚞𝚊𝚗𝚝𝚊𝚜 𝚌𝚘𝚕𝚞𝚗𝚊𝚜: &#39;)) <a href=\"http://www.youtube.com/results?search_query=%23pede\">#pede</a> a quantidade de colunas\r<br>𝚕𝚒𝚗𝚑𝚊 = 𝚕𝚒𝚜𝚝() <a href=\"http://www.youtube.com/results?search_query=%23lista\">#lista</a> que receberá uma linha\r<br>\r<br>𝚏𝚘𝚛 𝚕 𝚒𝚗 𝚛𝚊𝚗𝚐𝚎(𝚕𝚒𝚗𝚑𝚊𝚜):\r<br>    𝚏𝚘𝚛 𝚌 𝚒𝚗 𝚛𝚊𝚗𝚐𝚎(𝚌𝚘𝚕𝚞𝚗𝚊𝚜):\r<br>        𝚕𝚒𝚗𝚑𝚊.𝚊𝚙𝚙𝚎𝚗𝚍(𝚒𝚗𝚝(𝚒𝚗𝚙𝚞𝚝(𝚏&#39;𝙳𝚒𝚐𝚒𝚝𝚎 𝚞𝚖 𝚟𝚊𝚕𝚘𝚛 𝚙𝚊𝚛𝚊 [{𝚕},{𝚌}]: &#39;))) \r<br>    𝚖𝚊𝚝𝚛𝚒𝚣.𝚊𝚙𝚙𝚎𝚗𝚍(𝚕𝚒𝚗𝚑𝚊[:]) <a href=\"http://www.youtube.com/results?search_query=%23quando\">#quando</a> uma linha for completamente preenchida , ela será adicionada na matriz...\r<br>    𝚕𝚒𝚗𝚑𝚊.𝚌𝚕𝚎𝚊𝚛() <a href=\"http://www.youtube.com/results?search_query=%23e\">#e</a> limpada em seguida para receber os valores da próxima linha.\r<br>\r<br>𝚙𝚛𝚒𝚗𝚝(&#39;-=&#39; * 𝟸0)\r<br>\r<br>𝚏𝚘𝚛 𝚕𝚒𝚗𝚑𝚊 𝚒𝚗 𝚛𝚊𝚗𝚐𝚎(𝚕𝚒𝚗𝚑𝚊𝚜):\r<br>    𝚏𝚘𝚛 𝚌𝚘𝚕𝚞𝚗𝚊 𝚒𝚗 𝚛𝚊𝚗𝚐𝚎(𝚌𝚘𝚕𝚞𝚗𝚊𝚜):\r<br>        𝚙𝚛𝚒𝚗𝚝(𝚏&#39;[{𝚖𝚊𝚝𝚛𝚒𝚣[𝚕𝚒𝚗𝚑𝚊][𝚌𝚘𝚕𝚞𝚗𝚊]:^𝟻}]&#39;, 𝚎𝚗𝚍 = &#39; &#39;)\r<br>    𝚙𝚛𝚒𝚗𝚝()",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.74375,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.74375,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "d = []<br>col = []<br>for c in range(0, 3):<br>\tfor k in range(0,3):<br>\t\td.append(int(input(f&#39;Digite o valor para a posição [{c}, {k}]: &#39;)))<br>\t\tcol.append(d[:])<br>\t\td.clear()<br>print(&#39;-=&#39;*23)<br>print(f&#39;{col[0]}{col[1]}{col[2]}\\n{col[3]}{col[4]}{col[5]}\\n{col[6]}{col[7]}{col[8]}&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "Esse eu fiz assim: <br>lista = [[], [], []]\r<br>for c in range(1, 4):\r<br>    lista[0].append(str(input(f&#39;Digite um valor para [0, {c}]: &#39;)))\r<br>for p in range(1, 4):\r<br>    lista[1].append(str(input(f&#39;Digite um valor para [1, {p}]: &#39;)))\r<br>for i in range(1, 4):\r<br>    lista[2].append(str(input(f&#39;Digite um valor para [2, {c}]: &#39;)))\r<br>print(&#39;=&#39;*45)\r<br>print(f&#39;[ {lista[0][0]} ] [ {lista[0][1]} ] [ {lista[0][2]} ]&#39;)\r<br>print(f&#39;[ {lista[1][0]} ] [ {lista[1][1]} ] [ {lista[1][2]} ]&#39;)\r<br>print(f&#39;[ {lista[2][0]} ] [ {lista[2][1]} ] [ {lista[2][2]} ]&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "Esse foi super hard, precisei ver a correção :/",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.2625,
+                "joy": 0.0,
+                "fear": 0.2625,
+                "disgust": 0.0,
+                "anger": 0.2625
+            },
+            "sentiment": {
+                "score": -0.2625,
+                "label": "NEGATIVE"
+            }
+        }
+    },
+    {
+        "comment": "usando 100% do celebro <br>&quot;&quot;&quot;linha = [[], [], []]\r<br>for c in range(0, 10):\r<br>    if len(linha[0]) &lt; 3:\r<br>        linha[0].append(int(input(&#39;Digite um numero: &#39;)))\r<br>    if len(linha[1]) &lt; 3:\r<br>        linha[1].append(int(input(&#39;Digite um valor: &#39;)))\r<br>    if len(linha[2]) &lt; 3:\r<br>        linha[2].append(int(input(&#39;Digite um valor: &#39;)))\r<br>print(f&#39;{&quot;-=&quot; * 30}&#39;)\r<br>print(linha[0])\r<br>print(linha[1])\r<br>print(linha[2])&quot;&quot;&quot;",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.525,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.525,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "achei minha resolução mais simples:<br><br>matriz = [[], [], []]\r<br>for c in range(0, 3):\r<br>    for d in range(0, 3):\r<br>        num = int(input(f&#39;Digite um valor para a posição[{c},{d}]:&#39;))\r<br>        matriz[c].append(num)\r<br>for c in range(0, 3):\r<br>    print(f&#39;[  {matriz[c][0]}  ] [  {matriz[c][1]}  ] [  {matriz[c][2]}  ]&#39;, end=&#39;\\n&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.525,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.525,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Caraca, me senti independente agora, vi o exercício e já pensei em um solução prática para meu trabalho e consegui resolver todos os problemas que tive..<br><br>from time import sleep\r<br>pessoas = []\r<br>dados_temp = []\r<br>\r<br>while True:\r<br>    dados_temp.append(str(input(&#39;Nome:&#39;)))\r<br>    dados_temp.append(str(input(&#39;Telefone:&#39;)))\r<br>    dados_temp.append(str(input(&#39;Email:&#39;)))\r<br>    pessoas.append(dados_temp[:])\r<br>    dados_temp.clear()\r<br>\r<br>    while True:\r<br>        continuar = str(input(&#39;Quer continuar?[S/N]:&#39;)).strip()\r<br>        if continuar in &#39;SsNn&#39;:\r<br>            break\r<br>\r<br>    if continuar in &#39;Nn&#39;:\r<br>        print(&#39;Analisando dados..\\n&#39;)\r<br>        sleep(2)\r<br>        break\r<br>\r<br>for p in range(len(pessoas)):\r<br>    print(f&#39; {p+1}-{pessoas[p][0]:&lt;20}, {pessoas[p][1]:^15}, {pessoas[p][2]}&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.453125,
+                "joy": 0.3417578125,
+                "fear": 0.3776041666666667,
+                "disgust": 0.3020833333333333,
+                "anger": 0.2265625
+            },
+            "sentiment": {
+                "score": 0.1884077380952381,
+                "label": "MIXED"
+            }
+        }
+    },
+    {
+        "comment": "# Fiz um Código bem comentado e com os nomes bem sugestivos para o pessoal poder utilizar e alterar de forma a entender melhor matriz, taí pra quem quiser<br><br><br>matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]] # Cria matriz com os tamanhos definido\r<br>\r<br>for numLinha, linha in enumerate(matriz): # For que ira percorrer as linhas\r<br>    for numColuna, elemento in enumerate(linha): # For que ira percorrer as colunas\r<br>        matriz[numLinha][numColuna] = int(input(f&#39;Digite um valor para [{numLinha}, {numColuna}]: &#39;)) # Comndo para atribuir o elemento a matriz\r<br>print(*matriz, sep=&#39;\\n&#39;) # *matriz remove toda a identação da lista &#39;matriz&#39; e sep =&#39;\\n&#39; coloca uma quebra de linha entre seus elementos",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.42,
+                "joy": 0.798,
+                "fear": 0.21,
+                "disgust": 0.21,
+                "anger": 0.21
+            },
+            "sentiment": {
+                "score": 0.378,
+                "label": "MIXED"
+            }
+        }
+    },
+    {
+        "comment": "eu fiz assim<br><br>lista = [[],[],[],[],[],[],[],[],[]]<br>for c in range(0,9):<br>    lista[c].append(int(input(&#39;Digite um valor: &#39;)))<br>print(lista [0] ,lista [1] ,lista [2])<br>print(lista [3] ,lista [4] ,lista [5])<br>print(lista [6] ,lista [7] ,lista [8])",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "E eu, que compliquei tudo o que era possível de se complicar kkkkk<br>Usei um for pra definir o maior número só pra centralizar baseado nele, pra isso tive que usar um format dentro de outro format (nem sabia que isso era possível kkkkk)<br><br>l1 = []\r<br>l2 = []\r<br>l3 = []\r<br>m = [l1, l2, l3]\r<br>y = x = 0\r<br>while x &lt; 3:\r<br>    n = int(input(f&#39;Digite um valor para [{y}, {x}]: &#39;))\r<br>    m[x].append(n)\r<br>    y += 1\r<br>    if y == 3:\r<br>        x += 1\r<br>        y = 0\r<br>M = 0\r<br>for i in range(0, len(m)):\r<br>    for c, v in enumerate(m[i]):\r<br>        if i == c == 0:\r<br>            M = v\r<br>        else:\r<br>            if v &gt; M:\r<br>                M = v\r<br>print(&#39;-=&#39;*20)\r<br>for i in range(0, 3):\r<br>    if i in [1, 2]:\r<br>        print(&#39;\\n&#39;, end=&#39;&#39;)\r<br>    for v in m[i]:\r<br>        print(f&#39;[{v:^{len(str(M))}}]&#39;, end=&#39;&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.144375,
+                "joy": 0.51875,
+                "fear": 0.144375,
+                "disgust": 0.0,
+                "anger": 0.144375
+            },
+            "sentiment": {
+                "score": 0.278125,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Minha solução:<br><br>matriz = []\r<br>\r<br>for v in range (0, 9):\r<br>    num = int(input(f&#39;Digite um valor para a posição {v}: &#39;))\r<br>    matriz.append(num)\r<br>print(f&#39;[ {matriz[0]:^5} ] [ {matriz[1]:^5} ] [ {matriz[2]:^5} ]&#39;)\r<br>print(f&#39;[ {matriz[3]:^5} ] [ {matriz[4]:^5} ] [ {matriz[5]:^5} ]&#39;)\r<br>print(f&#39;[ {matriz[6]:^5} ] [ {matriz[7]:^5} ] [ {matriz[8]:^5} ]&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.25,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.25,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Minha solução foi um pouco diferente:<br><br>lista = [[], [], []]\r<br>\r<br>for x in range(1, 4):\r<br>    lista[0].append(int(input(f&#39;Digite o {x}º valor: &#39;)))\r<br>\r<br>for y in range(1, 4):\r<br>    lista[1].append(int(input(f&#39;Digite o {y+3} valor: &#39;)))\r<br>\r<br>for z in range(1, 4):\r<br>    lista[2].append(int(input(f&#39;Digite o {z+6} valor: &#39;)))\r<br>\r<br>print(&#39;=*&#39; * 15)\r<br>print(f&#39;[{lista[0][0]:^10}]&#39;, end=&#39;&#39;)\r<br>print(f&#39;[{lista[0][1]:^10}]&#39;, end=&#39;&#39;)\r<br>print(f&#39;[{lista[0][2]:^10}]&#39;)\r<br>print(f&#39;[{lista[1][0]:^10}]&#39;, end=&#39;&#39;)\r<br>print(f&#39;[{lista[1][1]:^10}]&#39;, end=&#39;&#39;)\r<br>print(f&#39;[{lista[1][2]:^10}]&#39;)\r<br>print(f&#39;[{lista[2][0]:^10}]&#39;, end=&#39;&#39;)\r<br>print(f&#39;[{lista[2][1]:^10}]&#39;, end=&#39;&#39;)\r<br>print(f&#39;[{lista[2][2]:^10}]&#39;)\r<br>print(&#39;=*&#39; * 15)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "Meu código foi bem diferente :&#39;)<br>matriz = [<br>[ [ ], [ ], [ ] ],<br>[ [ ], [ ], [ ] ],<br>[ [ ], [ ], [ ] ]<br>]<br><br>lista = 0<br>slot = 0<br><br>for _ in range(0, 9):<br>\tnum = int(input(f&quot;[{lista}, {slot}]= &quot;))<br>\tmatriz[lista][slot].append(num)<br>\tslot += 1<br>\tif slot == 3:<br>\t\tlista += 1<br>\t\tslot = 0<br><br>print(&quot;=&quot; * 55)<br>for i in matriz[0]:<br>\tprint(i, end = &quot;&quot;)<br>print(&quot;\\n&quot;, end = &quot;&quot;)<br><br>for i in matriz[1]:<br>\tprint(i, end = &quot;&quot;)<br>print(&quot;\\n&quot;, end = &quot;&quot;)<br><br>for i in matriz[2]:<br>\tprint(i, end = &quot;&quot;)<br>print(&quot;\\n&quot;, end = &quot;&quot;)<br>print(&quot;=&quot; * 55)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 1.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 1.0,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "matriz = [[], [], []]\r<br>contv = conth = 0\r<br>for c in range(0, 9):\r<br>    num = int(input(f&#39;Valor da posição {conth, contv}&#39;))\r<br>    matriz[conth].append(num)\r<br>    contv += 1\r<br>    if contv == 3:\r<br>        contv = 0\r<br>        conth += 1\r<br>print(f&#39;[ {matriz[0][0]:^5} ] [ {matriz[0][1]:^5} ] [ {matriz[0][2]:^5} ]&#39;)\r<br>print(f&#39;[ {matriz[1][0]:^5} ] [ {matriz[1][1]:^5} ] [ {matriz[1][2]:^5} ]&#39;)\r<br>print(f&#39;[ {matriz[2][0]:^5} ] [ {matriz[2][1]:^5} ] [ {matriz[2][2]:^5} ]&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "Eu fiz utilizando apenas uma lista que contém 9 elementos:<br><br>lista = []<br>for i in range(0, 3):<br>    for j in range(0, 3):<br>        n = int(input(f&#39;Digite um valor para [{i}, {j}]: &#39;))<br>        lista.append(n)<br>for imprimir_i in range(0, 9):<br>    if imprimir_i % 3 == 0:<br>        print(f&#39;\\n[{lista[imprimir_i]:^5}]&#39;, end=&#39;&#39;)<br>    else:<br>        print(f&#39;[{lista[imprimir_i]:^5}]&#39;, end=&#39;&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "Eu fiz utilizando apenas uma lista que contém 9 elementos:<br><br>lista = []<br>for i in range(0, 3):<br>    for j in range(0, 3):<br>        n = int(input(f&#39;Digite um valor para [{i}, {j}]: &#39;))<br>        lista.append(n)<br>for imprimir_i in range(0, 9):<br>    if imprimir_i % 3 == 0:<br>        print(f&#39;\\n[{lista[imprimir_i]:^5}]&#39;, end=&#39;&#39;)<br>    else:<br>        print(f&#39;[{lista[imprimir_i]:^5}]&#39;, end=&#39;&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "temp = list()\r<br>geral = list()\r<br>c2 = c1 = c = 0\r<br>print(&#39;Matrizes 3X3&#39;)\r<br>for c in range(0, 9):\r<br>    temp.append(int(input(f&#39;Digite um valor para {c1,c2}:  &#39;)))\r<br>    c2 += 1\r<br>    if c2 &gt; 2:\r<br>        c1 += 1\r<br>        c2 = 0\r<br>print(&#39;-=&#39;* 16)\r<br>for matriz in range(0, len(temp)):\r<br>    print(f&#39;[ {temp[matriz]:^5} ]&#39;, end=&#39;  &#39;)\r<br>    if temp[matriz] == temp[2]:\r<br>        print()\r<br>    if temp[matriz] == temp[5]:\r<br>        print()\r<br>print()\r<br>print(&#39;-=&#39;* 16)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "ip",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "list = [[],[],[]]\r<br>for c in range(0, 3):\r<br>    r = int(input(f&quot;Digite o valor [{0},{c}] &quot;))\r<br>    list[0].append(r)\r<br>for d in range(0, 3):\r<br>    e = int(input(f&quot;Digite o valor [{1},{d}] &quot;))\r<br>    list[1].append(e)\r<br>for q in range(0, 3):\r<br>    f = int(input(f&quot;Digite o valor [{2},{q}] &quot;))\r<br>    list[2].append(f)\r<br>print(f&#39;  [  {list[0][0]}  ]&#39;,f&#39;[  {list[0][1]}  ]&#39;,f&#39;[  {list[0][2]}  ] \\n&#39;\r<br>     ,f&#39; [  {list[1][0]}  ]&#39;,f&#39;[  {list[1][1]}  ]&#39;,f&#39;[  {list[1][2]}  ] \\n&#39;\r<br>     ,f&#39; [  {list[2][0]}  ]&#39;,f&#39;[  {list[2][1]}  ]&#39;,f&#39;[  {list[2][2]}  ] &#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "matriz = list()\r<br>for c in range(0, 9):\r<br>    matriz.append(int(input(f&#39;Digite um valor: &#39;)))\r<br>c = 0\r<br>print(&#39;-=-&#39;*30)\r<br>for m in matriz:\r<br>    if c % 3 == 0:\r<br>        print(f&#39;\\n[{m:^5}]&#39;, end=&#39;&#39;)\r<br>    else:\r<br>        print(f&#39;[{m:^5}]&#39;, end=&#39;&#39;)\r<br>    c += 1",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "# Minha resposta<br>\r<br>listaMatriz = [[], [], []]\r<br>\r<br>for linha in range(0, 3):\r<br>    for coluna in range(0, 3):\r<br>        if linha == 0:\r<br>            listaMatriz[0].append(int(input(f&#39;Digite um valor pra [{linha}, {coluna}]: &#39;)))\r<br>        elif linha == 1:\r<br>            listaMatriz[1].append(int(input(f&#39;Digite um valor pra [{linha}, {coluna}]: &#39;)))\r<br>        elif linha == 2:\r<br>            listaMatriz[2].append(int(input(f&#39;Digite um valor pra [{linha}, {coluna}]: &#39;)))\r<br>\r<br>print(&#39;=-=&#39;*15)\r<br>for linha in range(0, 3):\r<br>    for coluna in range(0, 3):\r<br>        print(f&#39;[ {listaMatriz[linha][coluna]} ]&#39;, end=&#39;&#39;)\r<br>    print()",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "fiz da pior maneira possível <br>from random import randint<br>for x in range(3):\r<br>    print(randint(0,10),end=&#39; &#39;)\r<br>print()\r<br>for y in range(3):\r<br>    print(randint(0,10),end=&#39; &#39;)\r<br>print()    \r<br>for z in range(3):\r<br>    print(randint(0,10),end=&#39; &#39;)\r<br>print()",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.525,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.525,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Minha resolução:<br><br>matriz = [ ]<br>for l in range(3):<br>    linha = [ ]<br>    for c in range (3):<br>        linha.append(int(input(f&#39;Digite: )<br>    matriz.append(linha)<br><br>print(f&#39;{matriz [0]} \\n{matriz [1]} \\n{matriz[2]}&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.2625,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.2625,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "fiz um bagulho gigantes! Mas deu certo tbm.<br><br>valores = [[], [], []]\r<br> \r<br>for c in range(0, 3):\r<br>    valor = int(input(f&#39;Digite um valor para a posição [0, {c}]:&#39;))\r<br>    if c == 0:\r<br>        valores[0].append(valor)\r<br>      \r<br>    elif c == 1:\r<br>        valores[0].append(valor)\r<br>        \r<br>    else:\r<br>        valores[0].append(valor)\r<br>       \r<br>for c in range(0, 3):\r<br>    valor1 = int(input(F&#39;Digite um valor para a posição [1, {c}]:&#39;))\r<br>    if c == 0:\r<br>        valores[1].append(valor1)\r<br>       \r<br>    elif c == 1:\r<br>        valores[1].append(valor1)\r<br>       \r<br>    else:\r<br>        valores[1].append(valor1)\r<br>        \r<br>for c in range(0, 3):\r<br>    valor2 = int(input(F&#39;Digite um valor para a posição [2, {c}]:&#39;))\r<br>    if c == 0:\r<br>        valores[2].append(valor2)\r<br>        \r<br>    elif c == 1:\r<br>        valores[2].append(valor2)\r<br>        \r<br>    else:\r<br>        valores[2].append(valor2)\r<br>print(f&#39;[ {valores[0][0]} ] [ {valores[0][1]} ] [ {valores[0][2]} ]&#39;)\r<br>print(f&#39;[ {valores[1][0]} ] [ {valores[1][1]} ] [ {valores[1][2]} ]&#39;)\r<br>print(f&#39;[ {valores[2][0]} ] [ {valores[2][1]} ] [ {valores[2][2]} ]&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.26964285714285713,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.26964285714285713,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Fiz talvez do jeito mais trabalhoso possível<br><br>lista = []\r<br>print(&#39;MATRIZ 3X3&#39;)\r<br>n1 = [int(input(&#39;Digite um valor para [0, 0]: &#39;))]\r<br>n2 = [int(input(&#39;Digite um valor para [1, 0]: &#39;))]\r<br>n3 = [int(input(&#39;Digite um valor para [2, 0]: &#39;))]\r<br>n4 = [int(input(&#39;Digite um valor para [0, 1]: &#39;))]\r<br>n5 = [int(input(&#39;Digite um valor para [0, 2]: &#39;))]\r<br>n6 = [int(input(&#39;Digite um valor para [1, 1]: &#39;))]\r<br>n7 = [int(input(&#39;Digite um valor para [1, 2]: &#39;))]\r<br>n8 = [int(input(&#39;Digite um valor para [2, 1]: &#39;))]\r<br>n9 = [int(input(&#39;Digite um valor para [2, 2]: &#39;))]\r<br>lista.append(n1)\r<br>lista.append(n2)\r<br>lista.append(n3)\r<br>lista.append(n4)\r<br>lista.append(n5)\r<br>lista.append(n6)\r<br>lista.append(n7)\r<br>lista.append(n8)\r<br>lista.append(n9)\r<br>print(f&#39;&#39;&#39;{lista[0]} {lista[1]} {lista[2]}\r<br>{lista[3]} {lista[4]} {lista[5]}\r<br>{lista[6]} {lista[7]} {lista[8]}&#39;&#39;&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 1.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 1.0,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Eu consegui fazer, porém ficou muito grande e com gambiarra :(<br><br>lista = [[],[],[]]\r<br>for a in range(0,3):\r<br>    lista[0].append(int(input(f&#39;\\033[31mDigite um valor para [0, {a}]: &#39;)))\r<br>for a in range(0,3):\r<br>    lista[1].append(int(input(f&#39;Digite um valor para [1, {a}]: &#39;)))\r<br>for a in range(0,3):\r<br>    lista[2].append(int(input(f&#39;Diigte um valor para [2, {a}]: &#39;)))\r<br>print(&#39;\\033[0m-=&#39;*30)\r<br>for b in lista:\r<br>    if b == lista[0]:\r<br>        for c in b:\r<br>            print(f&#39;\\033[34m[{c:^5}]&#39;,end=&#39;&#39;)\r<br>        print()\r<br>    if b == lista[1]:\r<br>        for c in b:\r<br>            print(f&#39;[{c:^5}]&#39;,end=&#39;&#39;)\r<br>        print()\r<br>    if b == lista[2]:\r<br>        for c in b:\r<br>            print(f&#39;[{c:^5}]&#39;,end=&#39;&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.525,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.525,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "mt = [[], [], []]<br>for i in range(1, 4):<br>    for j in range(1, 4):<br>        p = int(input(f&#39;digite um valor para a posição [a{i}{j}]: &#39;))<br>        mt[i - 1].append(p)<br>for i in range(0, 3):<br>    for j in range(0, 3):<br>        print(f&#39;[{mt[i][j]:^ 5}]&#39;, end=&#39;&#39;)<br>    print(&#39;&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "matriz = []\r<br>\r<br>for i in range(0, 3):\r<br>    parte_matriz = []\r<br>    \r<br>    for j in range(0, 3):\r<br>        parte_matriz.append(int(input(f&#39;Digite um valor para [{i}, {j}]: &#39;)))\r<br>    \r<br>    matriz.append(parte_matriz)\r<br>\r<br>print(&#39;-=-&#39;*20)\r<br>for i in matriz:\r<br>    for j in i:\r<br>        print(f&#39;[  {j}  ]&#39;, end=&#39; &#39;)\r<br>    \r<br>    print()",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.2,
+                "joy": 0.2,
+                "fear": 0.2,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "Tô feliz ficou quase igual:<br>matriz = [[], [], []]\r<br>for i in range(0, 3):\r<br>    for j in range(0, 3):\r<br>        matriz[i].append(int(input(f&#39;Digite um número para a posição [{i}, {j}]: &#39;)))\r<br>for i in range(0, 3):\r<br>    for j in range(0, 3):\r<br>        print(f&#39;[{matriz[i][j]:^5}]&#39;, end=&#39; &#39;)\r<br>    print(&#39; &#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 1.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 1.0,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "matriz = [[], [], []]\r<br>for l in range(0, 3):\r<br>    for c in range(0, 3):\r<br>        matriz[l].append(int(input(f&#39;Digite um valor para [{l}, {c}]: &#39;)))\r<br>for line in matriz:\r<br>    for column in range(0, 3):\r<br>        print(f&#39;[{line[column]:^5}] &#39;, end=&#39;&#39;)\r<br>    print()",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "as duas formas sao bem parecidas uma com a outra, so tava testando msm como eu podia usar esses fatiamentos<br><br><a href=\"http://www.youtube.com/results?search_query=%23primeira\">#primeira</a> forma que eu fiz com fatiamento\r<br>&#39;&#39;&#39;matriz = []\r<br>valores = list()\r<br>for i in range(0,2+1):<a href=\"http://www.youtube.com/results?search_query=%23aqui\">#aqui</a> serve pra fazer os valores 0 e 1 e assim em diante da matriz\r<br>    for v in range(0,2+1):\r<br>        valores.append(int(input(f&#39;Digite o valor para [{i}] [{v}]: &#39;)))\r<br>        matriz.append(valores[:])\r<br>        valores.clear()\r<br>print(matriz[0:3])\r<br>print(matriz[3:6])\r<br>print(matriz[6:])&#39;&#39;&#39;<br>\r<br> <br><br><a href=\"http://www.youtube.com/results?search_query=%23segunda\">#segunda</a> forma de fazer\r<br>matriz = [[],[],[]]\r<br>valores = list()\r<br>for i in range(0, 2+1):\r<br>    for v in range(0,2+1):\r<br>        valores.append(int(input(f&#39;Digite o valor para [{i}] [{v}]; &#39;)))\r<br>matriz[0].append(valores[0:3])\r<br>matriz[1].append(valores[3:6])\r<br>matriz[2].append(valores[6:])\r<br>print(matriz[0])\r<br>print(matriz[1])\r<br>print(matriz[2])",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.3659090909090909,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.3659090909090909,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "COMO POSSO FAZER PARA CALCULAR A MEDIA DOS NÚMEROS RECEBIDOS NA MATRIZ ?",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.2625,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.2625,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Achei o meu jeito um pouco mais simples na questão do uso do for<br><br>lista = [[], [], []]<br>num = []<br>for c in range(1, 4):<br>    n = (int(input(&quot;Digite um número: &quot;)))<br>    lista[0].append(n)<br>for c in range(1, 4):<br>    n = (int(input(&quot;Digite um número: &quot;)))<br>    lista[1].append(n)<br>for c in range(1, 4):<br>    n = (int(input(&quot;Digite um número: &quot;)))<br>    lista[2].append(n)<br><br>print(f&#39;[{lista[0][0]}  {lista[0][1]}  {lista[0][2]}]&#39;)<br>print(f&#39;|{lista[1][0]}  {lista[1][1]}  {lista[1][2]}|&#39;)<br>print(f&#39;[{lista[2][0]}  {lista[2][1]}  {lista[2][2]}]&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "saberia me ajudar como eu faço esse exercício ?<br><br>Tamanho da matriz\r<br>Escreva uma função dimensoes(matriz) que recebe uma matriz como parâmetro e imprime as dimensões da matriz recebida, no formato iXj",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.459375,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.459375,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "matriz = []<br>for l in range(3):<br>     linha = []<br>     for c in range(3):<br>          v = int(input(&#39;Digite um valor: &#39;))<br>          linha.append(v)<br>     matriz.append(linha)<br>print(&#39;=&#39; * 30)<br><br>for l in range(3):<br>     for c in range(3):<br>          print(f[{&#39;matriz[l][c]:^6}]&#39;, end=&#39; &#39;<br>     print()",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "Eu fiz com 3 for e apppend:<br><br>matriz = list()\r<br>\r<br>for c in range(0, 3):\r<br>    num = int(input(f&#39;Digite um número para a posição 0,{c}: \\n&#39;))\r<br>    matriz.append([num])\r<br>for d in range(0, 3):\r<br>    num = int(input(f&#39;Digite um número para a posição 1,{d}: \\n&#39;))\r<br>    matriz.append([num])\r<br>for e in range(0, 3):\r<br>    num = int(input(f&#39;Digite um número para a posição 2,{e}: \\n&#39;))\r<br>    matriz.append([num])\r<br>print(f&#39;-=&#39; * 6)\r<br>print(f&#39;{matriz[0]} {matriz[1]} {matriz[2]}&#39;)\r<br>print(f&#39;{matriz[3]} {matriz[4]} {matriz[5]}&#39;)\r<br>print(f&#39;{matriz[6]} {matriz[7]} {matriz[8]}&#39;)\r<br>print(f&#39;-=&#39; * 6)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "Fiz na gambiarra, vou tentar simplificar aqui.<br>matriz = [[],[],[],[],[],[],[],[],[]]\r<br>for c in range(0,9):\r<br>    digite = int(input(f&#39;Digite um valor para Matriz:&#39;))\r<br>    if c == 0:\r<br>        matriz[0].append(digite)\r<br>    if c == 1:\r<br>        matriz[1].append(digite)\r<br>    if c == 2:\r<br>        matriz[2].append(digite)\r<br>    if c == 3:\r<br>        matriz[0].append(digite)\r<br>    if c == 4:\r<br>        matriz[1].append(digite)\r<br>    if c == 5:\r<br>        matriz[2].append(digite)\r<br>    if c == 6:\r<br>        matriz[0].append(digite)\r<br>    if c == 7:\r<br>        matriz[1].append(digite)\r<br>    if c == 8:\r<br>        matriz[2].append(digite)\r<br>print(f&#39;[ {matriz[0][0]} ] [ {matriz[1][0]} ] [ {matriz[2][0]} ]&#39;)\r<br>print(f&#39;[ {matriz[0][1]} ] [ {matriz[1][1]} ] [ {matriz[2][1]} ]&#39;)\r<br>print(f&#39;[ {matriz[0][2]} ] [ {matriz[1][2]} ] [ {matriz[2][2]} ]&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "consegui<br>matriz = [[], [], []]\r<br>for x in range(1, 4):\r<br>    matriz[0].append(input(&#39;valor: &#39;))\r<br>for y in range(1, 4):\r<br>    matriz[1].append(input(&#39;valor: &#39;))\r<br>for z in range(1, 4):\r<br>    matriz[2].append(input(&#39;valor: &#39;))\r<br>print(matriz[0])\r<br>print(matriz[1])\r<br>print(matriz[2])",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.525,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.525,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "&quot;É muito fácil de você compreender&quot;<br>Eu vindo assistir a segunda vez pra tentar entender",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "matrix = [[], [], []]\r<br>for v in range(0, 3):\r<br>    m0 = int(input(f&#39;Digite um valor para [{0, v}]: &#39;))\r<br>    if len(matrix[0]) &lt; 3:\r<br>        matrix[0].append(m0)\r<br>for v in range(0, 3):\r<br>    m1 = int(input(f&#39;Digite um valor para [{1, v}]: &#39;))\r<br>    if len(matrix[1]) &lt; 3:\r<br>        matrix[1].append(m1)\r<br>for v in range(0, 3):\r<br>    m2 = int(input(f&#39;Digite em valor para [{2, v}]: &#39;))\r<br>    if len(matrix[2]) &lt; 3:\r<br>        matrix[2].append(m2)\r<br>\r<br>print(25 * &#39;-=&#39;)\r<br>for v in matrix:\r<br>    print(f&#39;[ {v[0]:^5} ]&#39;,end=&#39;&#39;)\r<br>print()\r<br>for v in matrix:\r<br>    print(f&#39;[ {v[1]:^5} ]&#39;,end=&#39;&#39;)\r<br>print()\r<br>for v in matrix:\r<br>    print(f&#39;[ {v[2]:^5} ]&#39;,end=&#39;&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "matriz = [[], [], []]\r<br>for nm1 in range(3):\r<br>    matriz[0].append(int(input(f&quot;Digite uma valor para [0, {nm1}]: &quot;)))\r<br>for nm2 in range(3):\r<br>    matriz[1].append(int(input(f&quot;Digite uma valor para [1, {nm2}]: &quot;)))\r<br>for nm3 in range(3):\r<br>    matriz[2].append(int(input(f&quot;Digite uma valor para [2, {nm3}]: &quot;)))\r<br>\r<br>print(f&quot;[{matriz[0][0]}] [{matriz[0][1]}] [{matriz[0][2]}]\\n&quot;\r<br>      f&quot;[{matriz[1][0]}] [{matriz[1][1]}] [{matriz[1][2]}]\\n&quot;\r<br>      f&quot;[{matriz[2][0]}] [{matriz[2][1]}] [{matriz[2][2]}]&quot;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "Eu fiz essa rapidinho nem acreditei<br><br>y = 0    <a href=\"http://www.youtube.com/results?search_query=%23variavel\">#variavel</a> de controle do laço while<br>listatemp = [ ]    <a href=\"http://www.youtube.com/results?search_query=%23lista\">#lista</a> temporária para receber os inputs<br>matriz = [ ]    <a href=\"http://www.youtube.com/results?search_query=%23lista\">#lista</a> que receberá os dados da matriz<br><br>while y &lt;= 2: <a href=\"http://www.youtube.com/results?search_query=%23eixo\">#eixo</a> vertical da matriz<br>    <br>    for x in range(0, 3): <a href=\"http://www.youtube.com/results?search_query=%23eixo\">#eixo</a> horizontal da matriz para receber 3 inputs<br>       listatemp.append(int(input(f&#39;Digite um valor para os eixos x{x} e y{y}: &#39;)))<br>    <br>    matriz.append(listatemp[:]) <a href=\"http://www.youtube.com/results?search_query=%23a\">#A</a> matriz absorve dados temporarios<br>    listatemp.clear() <a href=\"http://www.youtube.com/results?search_query=%23limpa\">#Limpa</a> os dados temporários<br>    y += 1 <a href=\"http://www.youtube.com/results?search_query=%23incrementada\">#incrementada</a> a variavel de controle do laço<br><br><a href=\"http://www.youtube.com/results?search_query=%23output\">#output</a> do sistema<br>print(&#39;=&#39;*50)<br>print(f&#39;[ {matriz[0][0]} ]&#39;, end= &#39; &#39;)<br>print(f&#39;[ {matriz[0][1]} ]&#39;, end= &#39; &#39;)<br>print(f&#39;[ {matriz[0][2]} ]&#39;, end= &#39; &#39;)<br>print(f&#39;\\n[ {matriz[1][0]} ]&#39;, end= &#39; &#39;)<br>print(f&#39;[ {matriz[1][1]} ]&#39;, end= &#39; &#39;)<br>print(f&#39;[ {matriz[1][2]} ]&#39;, end= &#39; &#39;)<br>print(f&#39;\\n[ {matriz[2][0]} ]&#39;, end= &#39; &#39;)<br>print(f&#39;[ {matriz[2][1]} ]&#39;, end= &#39; &#39;)<br>print(f&#39;[ {matriz[2][2]} ]&#39;, end= &#39; &#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.7875,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.7875,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Meu cérebro bugou total com esses 4 for com range de (0,3) dando um total de 9 valores",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.65625,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.65625,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "matriz = [[0,0,0], [0,0,0], [0,0,0]]<br>for l in range (0, 3):<br>    for c in range (0, 3):<br>        matriz[l][c] = int(input(f&#39;Digite o valor {l,c}: &#39;))<br>print(matriz[0])<br>print(matriz[1])<br>print(matriz[2])",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "lista = list()<br>dado = list()<br>for c in range(0, 9):<br>\tdado.append(int(input(&quot;Digite o valor da posição {}: &quot;.format(c))))<br>\tlista.append(dado[:])<br>\tdado.clear()<br>print(&quot;-=-&quot;*5)<br>print(&quot;&quot;&quot;{} {} {}<br>{} {} {}<br>{} {} {} &quot;&quot;&quot;.format(lista[0], lista[1], lista[2], lista[3], lista[4], lista[5], lista[6], lista[7], lista[8]))<br>print(&quot;-=-&quot;*5)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "Minha resolução ficou gigante, mas funcionou.<br><br>numero = 0\r<br>conta = contb = contc = 0\r<br>linha1 = []\r<br>linha2 = []\r<br>linha3 = []\r<br>\r<br>for p in range (0, 3):\r<br>    numero = int(input(f&#39;Digite um valor para [{0, (conta)}]: &#39;))\r<br>    conta += 1\r<br>    linha1.append(numero)\r<br>for p in range(4, 7):\r<br>    numero = int(input(f&#39;Digite um valor para [{1, (contb)}]: &#39;))\r<br>    contb += 1\r<br>    linha2.append(numero)\r<br>\r<br>for p in range (5, 8):\r<br>    numero = int(input(f&#39;Digite um valor para [{2, (contc)}]: &#39;))\r<br>    contc += 1\r<br>    linha3.append(numero)\r<br>\r<br>print(&#39;-=&#39;*30)\r<br>\r<br>for p in range(0, len(linha1)):\r<br>    print(f&#39;[ {linha1[p]:^5} ]&#39;, end=&#39;&#39;)\r<br>print(&#39;\\n&#39;)\r<br>for p in range(0, len(linha2)):\r<br>    print(f&#39;[ {linha2[p]:^5} ]&#39;, end=&#39;&#39;)\r<br>print(&#39;\\n&#39;)\r<br>for p in range(0, len(linha3)):\r<br>    print(f&#39;[ {linha3[p]:^5} ]&#39;, end=&#39;&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.7875,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.7875,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "lista = list()\r<br>n = list()\r<br>pos = 0\r<br>while pos != 3:\r<br>    for cursor in range(0, 3):\r<br>        n.append(int(input(f&#39;DIgite um valor para[{pos},{cursor}]: &#39;)))\r<br>        lista.append(n[:])\r<br>        n.clear()\r<br>    pos +=1\r<br>print(lista)\r<br>print(f&quot;&quot;&quot;\r<br>{lista[0]}     {lista[1]}     {lista[2]}\r<br>{lista[3]}     {lista[4]}     {lista[5]}\r<br>{lista[6]}     {lista[7]}     {lista[8]}&quot;&quot;&quot;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "lista=[[],[],[]]\r<br>\r<br>for pos,s in enumerate(lista):\r<br>    for i in range(3):\r<br>        s.append(int(input(f&quot;O número da posição [{pos}, {i}] ⇾ &quot;)))\r<br>\r<br>print()\r<br>for s in lista:\r<br>    for i in s:\r<br>        print(f&quot;({i})&quot;,end=&quot;&quot;)\r<br>    print()",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "# s = sub-lista\r<br># i = item de lista\r<br>\r<br>\r<br># dimensão da matriz fixa\r<br>\r<br>lista=[[],[],[]]\r<br>\r<br>for pos,s in enumerate(lista):\r<br>    for i in range(3):\r<br>        s.append(int(input(f&quot;O número da posição [{pos}, {i}] ⇾ &quot;)))\r<br>\r<br>print()\r<br>for s in lista:\r<br>    for i in s:\r<br>        print(f&quot;({i})&quot;,end=&quot;&quot;)\r<br>    print()\r<br>    \r<br># dimensão da matriz escolhida\r<br>lista=[]\r<br>vazio=[]\r<br>dimensão=int(input(&quot;\\nDigite a dimensão da matriz: &quot;))\r<br>\r<br>for i in range(dimensão):\r<br>    lista.append(vazio[:])\r<br>\r<br>for pos,sl in enumerate(lista):\r<br>    for i in range(dimensão):\r<br>        sl.append(int(input(f&quot;O número da posição [{pos}, {i}] ⇾ &quot;)))\r<br>print()\r<br>for sl in lista:\r<br>    for i in sl:\r<br>        print(f&quot;({i})&quot;,end=&quot;&quot;)\r<br>    print()",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.2625,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.2625,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "lista = []\r<br>\r<br>o = int(input(&#39;Qual a ordem para a matriz quadrada? &#39;))\r<br>\r<br>print()\r<br>for l in range(1,o+1):\r<br>    for c in range(1,o+1):\r<br>        lista.append(int(input(f&#39;Digite um valor para {[l,c]}: &#39;)))\r<br>print()\r<br>\r<br>i=0\r<br>f=o\r<br>\r<br>for n in range(o):\r<br>    print(lista[i:f])\r<br>    i+=o\r<br>    f+=o",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.25,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.25,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Velho, fazer  algorítmo e lógica de programação antes de ir aprender uma linguagem ajuda de mais. Fiz esta atividade em 30min, só precisei relembrar como faz matriz. Ai só aplicar em lista e foi sucesso.",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.175,
+                "joy": 0.735,
+                "fear": 0.175,
+                "disgust": 0.0,
+                "anger": 0.175
+            },
+            "sentiment": {
+                "score": 0.56,
+                "label": "MIXED"
+            }
+        }
+    },
+    {
+        "comment": "linha=[[],[],[]]\r<br>i=e=l=0\r<br>while len(linha[0])+len(linha[1])+len(linha[2])&lt;9:\r<br>  while len(linha[i])&lt;3:\r<br>    n=int(input(&quot;Valor: &quot;))\r<br>    linha[i]+=n,\r<br>  i+=1\r<br>while l&lt;3:\r<br>  while e&lt;3:\r<br>    print(f&quot;[{linha[l][e]:^5}]&quot;,end=&quot;&quot;)\r<br>    e+=1\r<br>  print()\r<br>  l+=1\r<br>  e=0",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "É, eu não sirvo pra isso, boa sorte pra vcs.",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.525,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": -0.525,
+                "label": "NEGATIVE"
+            }
+        }
+    },
+    {
+        "comment": "minha solução a seguir :<br><br>matriz = [[], [], []]\r<br>lin = col = 0\r<br>for c in range(0, 9):\r<br>    n = int(input(f&#39;Digite um valor inteiro para a posição [{lin}, {col}]: &#39;))\r<br>    if col == 3:\r<br>        lin += 1\r<br>        col = 0\r<br>    if lin == 3:\r<br>        lin = 2\r<br>    matriz[lin].append(n)\r<br>    col += 1\r<br>lin = 0\r<br>for c in range(0, 3):\r<br>    print(f&#39;{matriz[lin]}&#39;)\r<br>    lin += 1",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.25,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.25,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Usei o append funcionou bem!!!!<br><br>matriz = [[], [], []]\r<br>for l in range(0, 3):\r<br>    for c in range(0,3):\r<br>        matriz[c].append(int(input(f&#39;Digite o valor {l, c}: &#39;)))\r<br>\r<br>print(&#39;=&#39;*30)\r<br>for c in range(0, 3):\r<br>    for l in range(0, 3):\r<br>        print(f&#39;[{matriz[c][l]:^5}]&#39;, end=&#39;&#39;)\r<br>    print()",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 1.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 1.0,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "valores = list()<br>dados = list()<br>for c in range(0, 3):<br>  for c2 in range(0, 3):<br>    n = int(input(f&#39;Digite um valor para [{c}, {c2}]: &#39;))<br>    dados.append(n)<br>    if c2 == 2:<br>      valores.append(dados[:])<br>      dados.clear()<br>for cont in range(0, 3):<br>  for cont2 in range(0, 3):<br>    print(f&#39;[  {valores[cont][cont2]}  ]&#39;, end=&#39; &#39;)<br>    if cont2 == 2:<br>      print()",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.25625,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.25625,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "essa foi a que a minha ficou + diferente:<br><br>lista = [[], [], []]\r<br>per = cont1 = -1\r<br>cont0 = 0\r<br>for c in range(1, 10):\r<br>    cont1 += 1\r<br>    if cont1 &gt; 2:\r<br>        cont1 = 0\r<br>        cont0 += 1\r<br>    per = int(input(f&#39;Digite um valor para {[cont0, cont1]}: &#39;))\r<br>    lista[cont0].append(per)\r<br>print(&#39;&lt;&gt;&#39;*20)\r<br>for v in lista:\r<br>    print(f&#39;{v}&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "gostei muito do exercucio",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.525,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.525,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Eu achei mais intuitivo colocar o primeiro for como coluna e o segundo como linha. Se persarmos que o programa sempre digita os valores na vertical, então faz sentido manter a coluna a cada laço de linha, ou seja, só alterando as linhas. Do jeito que tá no exercício, o raciocínio acaba invertido, mas dá no mesmo. Só consegui pensar assim depois da resolução. Antes eu fiz 3 listas compostas e 1 laço for pra cada um kkkkkk<br><br>\r<br>matriz = [[], [], []]\r<br>\r<br>for coluna in range(0, 3):\r<br>    for linha in range(0, 3):\r<br>        matriz[linha].append(int(input(f&#39;Digite um valor para {[linha, coluna]}: &#39;)))       \r<br>\r<br>print(&#39;-=&#39;*50)<br>\r<br># Serve para visualizar o comportamento para a posterior transformação. Cada sublista é uma linha e cada valor dentro de uma sublista, representa uma coluna da esquerda para direita.\r<br>print(matriz)<br>\r<br>for coluna in range(0, 3):\r<br>    for linha in range(0, 3):\r<br>        print(f&#39;[{matriz[coluna][linha]:^5}]&#39;, end=&#39; &#39;)\r<br>    print()<br>\r<br>print(&#39;-=&#39;*50)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.4703125,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.4703125,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "Eu fiz assim: <br>matriz = [[],[],[]]\r<br>\r<br>for lin in range(0,len(matriz)):\r<br>    for col in range(0,len(matriz)):\r<br>        matriz[lin].append(int(input(f&#39;Insira o valor [{lin},{col}] &gt;&gt;&gt;&#39;)))\r<br>\r<br>for lin in matriz:\r<br>    for num in lin:\r<br>        print(f&#39;[{num:^5}]&#39;,end=&#39;&#39;)\r<br>    print(&#39;\\n&#39;,end=&#39;&#39;)<br><br>eu prefiro usar append para adicionar os valores ao invés de substituir,codigo fica bem mais limpo!",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 1.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 1.0,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "PARA QUE SERVE O F NO FINAL?",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.525,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.525,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "mat = [[],[],[]]<br>for m in range(0, 3):<br>    for c in range(0, 3):<br>        mat[m].append(int(input(f&#39;Diga o valor: [{m}, {c}] &#39;)))<br>print(&#39;=-=&#39;*15)<br>for p in range(0,3):<br>    print(f&#39;{mat[p]}&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "matriz=[[],[],[]]\r<br>num=0\r<br>for x in range(0,3):\r<br>    for y in range(0,3):\r<br>        num=int(input(f&#39;{x}.{y}:  &#39;))\r<br>        matriz[x].insert(y, num)\r<br>for i in range(0,3):\r<br>    print(matriz[i])",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "Nunca fiz tanta gambiarra para resolver um exercício, mas o output está idêntico, kkkkkkkk<br><br>x = y = 0\r<br>linha1 = []\r<br>linha2 = []\r<br>linha3 = []\r<br>matriz = []\r<br>matriz.append(linha1)\r<br>matriz.append(linha2)\r<br>matriz.append(linha3)\r<br>for n in range(0, 3):\r<br>    linha1.append(int(input(f&quot;Digite um valor para [{x},{y}]: &quot;)))\r<br>    y += 1\r<br>x = 1\r<br>y = 0\r<br>for n in range(0, 3):\r<br>    linha2.append(int(input(f&quot;Digite um valor para [{x},{y}]: &quot;)))\r<br>    y += 1\r<br>x = 2\r<br>y = 0\r<br>for n in range(0, 3):\r<br>    linha3.append(int(input(f&quot;Digite um valor para [{x},{y}]: &quot;)))\r<br>    y += 1\r<br>print(&quot;=-=&quot; * 30)\r<br>print(f&quot;[  {matriz[0][0]}  ] [  {matriz[0][1]}  ] [  {matriz[0][2]}  ]&quot;)\r<br>print(f&quot;[  {matriz[1][0]}  ] [  {matriz[1][1]}  ] [  {matriz[1][2]}  ]&quot;)\r<br>print(f&quot;[  {matriz[2][0]}  ] [  {matriz[2][1]}  ] [  {matriz[2][2]}  ]&quot;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.0,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.0,
+                "label": "NEUTRAL"
+            }
+        }
+    },
+    {
+        "comment": "matriz = list()\r<br>i = 0\r<br>for coluna in range(0, 3):\r<br>    numero = list()\r<br>    for linha in range(0, 3):\r<br>        valor = int(input(f&#39;Digite um valor para [{coluna}, {linha}]: &#39;))\r<br>        numero.append(valor)\r<br>        matriz.append(numero[:])\r<br>        numero.clear()\r<br>for ler in matriz:\r<br>    print(f&#39;{ler}&#39;, end=&#39;&#39;)\r<br>    i += 1\r<br>    if i == 3:\r<br>        i = 0\r<br>        print()",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.525,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.525,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "não ficou tão bonito, mas está funcional --&gt;<br><br>lista = [[], [], []]\r<br>for c in range(0, 9):\r<br>    valores = int(input(&#39;Digite um valor para a matriz: &#39;))\r<br>    if c &lt; 3:\r<br>        lista[0].append(valores)\r<br>    if 2 &lt; c &lt;= 5:\r<br>        lista[1].append(valores)\r<br>    if 5 &lt; c &lt;= 9:\r<br>        lista[2].append(valores)\r<br>print(f&#39;{lista[0]}\\n{lista[1]}\\n{lista[2]}&#39;)",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.6825,
+                "joy": 0.2375,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": -0.445,
+                "label": "MIXED"
+            }
+        }
+    },
+    {
+        "comment": "O meu ficou assim:<br>m = []<br>mt = []<br>for c in range(1,10):<br>\tmt.append(int(input(f&#39; selecione um numero {len(mt)+1} da matrix {len(m)+1}: &#39;)))<br>\tif c%3 == 0:<br>\t\tm.append(mt[:])<br>\t\tmt.clear()<br>for c in range(0,3):<br>\tfor d in range(0,3):<br>\t\tprint(f&#39;[{m[c][d]:^8}]&#39;,end=&#39;&#39;)<br>\tprint()<br>Tem menus 1 for mais um if e 2 listas <br>Pergunta: por o meu código ter menus um for ele ficou mais rápido e que ele tem uma lista e um if amais mas tem menus um for pra quem entende pode responder  por favor",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.0,
+                "joy": 0.65625,
+                "fear": 0.0,
+                "disgust": 0.0,
+                "anger": 0.0
+            },
+            "sentiment": {
+                "score": 0.65625,
+                "label": "POSITIVE"
+            }
+        }
+    },
+    {
+        "comment": "essa ai foi difícil",
+        "analysis": {
+            "emotions": {
+                "sadness": 0.525,
+                "joy": 0.0,
+                "fear": 0.525,
+                "disgust": 0.525,
+                "anger": 0.2625
+            },
+            "sentiment": {
+                "score": -0.525,
+                "label": "NEGATIVE"
+            }
+        }
+    }
+]

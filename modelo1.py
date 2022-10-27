@@ -18,7 +18,7 @@ def video_comments(url_video):
 
     youtube = build('youtube', 'v3', developerKey=DEVELOPER_KEY)
     video_response = youtube.commentThreads().list(
-        part='snippet,replies',maxResults=100, videoId=video_id).execute()
+        part='snippet, replies',maxResults=100, videoId=video_id).execute()
 
     while video_response:
         for item in video_response['items']:
