@@ -17,18 +17,19 @@ from selenium.webdriver.common.by import By
 def dadoVideo(url_video):
     link = url_video
     chrome_options = Options()
+    chrome_options.add_argument("user-data-dir=C:/Users/jeniffer.morais/AppData/Local/Google/Chrome/User Data")
     driver = webdriver.Chrome(executable_path=r"C:\chromedriver.exe", options=chrome_options)
     driver.maximize_window()
     driver.get(url_video)
     time.sleep(6)
-    with open('dados2.csv', 'w', encoding="utf-8") as csvfile:
+    with open('CSV/resultado.csv', 'a', encoding="utf-8") as csvfile:
         writer = csv.writer(csvfile);
-        writer.writerow(['Link', 'Visualizações', 'Like', 'Comentário', 'Like_Comentarios', 'Qtd_Caracteres','Tipo', 'Emoji?', 'Sadness', 'Joy', 'Fear', 'Disgust', 'Anger', 'Score', 'Label'])
+        # writer.writerow(['Link', 'Visualizações', 'Like', 'Deslikes', 'Comentário', 'Like_Comentarios', 'Qtd_Caracteres','Tipo', 'Emoji?', 'Sadness', 'Joy', 'Fear', 'Disgust', 'Anger', 'Score', 'Label'])
         driver.execute_script('window.scrollBy(0, 445)')
         time.sleep(6)
         i = 0
         #window.scrolBy para descer a página e carregar os comentários
-        while i<3:
+        while i<15:
             i=i+1
             driver.execute_script('window.scrollBy(0, 2445)')
             time.sleep(2)
@@ -39,6 +40,8 @@ def dadoVideo(url_video):
 
         #Pegar o número de visualizações e os likes
         dados = soup.find_all("yt-formatted-string", {"class": "factoid-value style-scope ytd-factoid-renderer"})
+        deslikes = soup.find_all("span", {"id": "text"})[0].get_text()
+
         likess = dados[0].get_text()
         visualizacoes = dados[1].get_text()
 
@@ -64,10 +67,10 @@ def dadoVideo(url_video):
                     count].get_text() or "!=" in comment[count].get_text() or "+=" in comment[count].get_text()
                         or "<table>" in comment[count].get_text() or "<tr>" in comment[count].get_text() or "<td>" in
                         comment[count].get_text() or "+=" in comment[count].get_text()):
-                    writer.writerow([link, visualizacoes, likess, comment[count].get_text().replace(",", "-").strip(),
+                    writer.writerow([link, visualizacoes, likess, deslikes, comment[count].get_text().replace(",", "-").strip(),
                                      likeAndDeslike.strip(), caracteres, 'Código', temImagem, x[0], x[1], x[2], x[3], x[4], x[5], x[6]])
                 else:
-                    writer.writerow([link, visualizacoes, likess, comment[count].get_text().replace(",", "-").strip(),
+                    writer.writerow([link, visualizacoes, likess, deslikes, comment[count].get_text().replace(",", "-").strip(),
                                      likeAndDeslike.strip(), caracteres, 'Opnião', temImagem, x[0], x[1], x[2], x[3], x[4], x[5], x[6]])
             else:
                 spans = comment[count].find_all("span")
@@ -79,12 +82,12 @@ def dadoVideo(url_video):
                 print(x)
                 if ("<" in comentario or "==" in comentario or "div" in comentario or "()" in comentario):
                     writer.writerow(
-                        [link, visualizacoes, likess, comentario.replace(",", "-").strip(), likeAndDeslike.strip(),
-                         caracteres, 'Código', temImagem, x[0], x[1], x[2], x[3], x[4], x[5], x[6]])
+                        [link, visualizacoes, likess, deslikes, comentario.replace(",", "-").strip(), likeAndDeslike.strip(),
+                         caracteres, 'Código', temImagem, str(x[0]), str(x[1]), str(x[2]), str(x[3]), str(x[4]), str(x[5]), str(x[6])])
                 else:
                     writer.writerow(
-                        [link, visualizacoes, likess, comentario.replace(",", "-").strip(), likeAndDeslike.strip(),
-                         caracteres, 'Opnião', temImagem, x[0], x[1], x[2], x[3], x[4], x[5], x[6]])
+                        [link, visualizacoes, likess, deslikes, comentario.replace(",", "-").strip(), likeAndDeslike.strip(),
+                         caracteres, 'Opnião', temImagem, str(x[0]), str(x[1]), str(x[2]), str(x[3]), str(x[4]), str(x[5]), str(x[6])])
             count = count + 1
 
 def analise_sentimentos(comment):
@@ -107,7 +110,7 @@ def analise_sentimentos(comment):
     x = json.loads(analysis_json, object_hook=lambda d: namedtuple('X', d.keys())(*d.values()))
 
     # 'Sadness', 'Joy', 'Fear', 'Disgust', 'Anger', 'Score', 'Label'
-    result =  [x[0].analysis.emotions.sadness,
+    result = [x[0].analysis.emotions.sadness,
             x[0].analysis.emotions.joy,
             x[0].analysis.emotions.fear,
             x[0].analysis.emotions.disgust,
