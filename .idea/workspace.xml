@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fe6cff0-dd38-4f7f-aa50-cd1a1f883718" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/api-youtube.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/api-youtube.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backup/Calculo dos resultados.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Backup/Calculo dos resultados.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mapa de calor/ExcelFinal/resultadoSemMedia.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Mapa de calor/ExcelFinal/resultadoSemMedia.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mapa de calor/Mapas-PNG/versaoFinal/Mapa-modelo1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Mapa de calor/Mapas-PNG/versaoFinal/Mapa-modelo1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mapa de calor/Mapas-PNG/versaoFinal/Mapa-modelo2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Mapa de calor/Mapas-PNG/versaoFinal/Mapa-modelo2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mapa de calor/Mapas-PNG/versaoFinal/Mapa-modelo3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Mapa de calor/Mapas-PNG/versaoFinal/Mapa-modelo3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mapa de calor/map.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mapa de calor/map.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modelo1.py" beforeDir="false" afterPath="$PROJECT_DIR$/modelo1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.~lock.dados.csv#" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dados.csv" beforeDir="false" afterPath="$PROJECT_DIR$/dados.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/idVideo.py" beforeDir="false" afterPath="$PROJECT_DIR$/idVideo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modelo3.py" beforeDir="false" afterPath="$PROJECT_DIR$/modelo3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +51,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.modelo3">
-    <configuration name="apiYoutube.ks" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="idVideo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="api-youtube" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -68,7 +63,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apiYoutube.ks.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/idVideo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -164,10 +159,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.modelo3" />
+        <item itemvalue="Python.modelo2" />
+        <item itemvalue="Python.idVideo" />
         <item itemvalue="Python.modelo1" />
         <item itemvalue="Python.map" />
-        <item itemvalue="Python.modelo2" />
-        <item itemvalue="Python.apiYoutube.ks" />
       </list>
     </recent_temporary>
   </component>
@@ -210,6 +205,11 @@
           <url>file://$PROJECT_DIR$/Mapa de calor/map.py</url>
           <line>29</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/modelo3.py</url>
+          <line>119</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
