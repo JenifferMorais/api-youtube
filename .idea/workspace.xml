@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fe6cff0-dd38-4f7f-aa50-cd1a1f883718" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/modelo4.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSV/resultado.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CSV/resultado.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idVideo.py" beforeDir="false" afterPath="$PROJECT_DIR$/idVideo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modelo3.py" beforeDir="false" afterPath="$PROJECT_DIR$/modelo3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSV/modelo4 - Copia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSV/modelo4.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CSV/modelo4.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modelo4.py" beforeDir="false" afterPath="$PROJECT_DIR$/modelo4.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

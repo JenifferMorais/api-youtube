@@ -23,12 +23,15 @@ def dadoVideo(url_video):
     driver.get(url_video)
     time.sleep(6)
 
-    cleon = planilhaCleon(url_video)
-    with open('CSV/modelo4.csv', 'a', encoding="utf-8") as csvfile:
+    cleon1 = planilhaCleon(url_video, 1)
+    print(cleon1)
+    cleon2 = planilhaCleon(url_video, 2)
+    print(cleon2)
+    with open('CSV/teste.csv', 'a', encoding="utf-8") as csvfile:
         writer = csv.writer(csvfile)
         # writer.writerow(['Link', 'Visualizacoes', 'Like', 'Deslikes', 'Like Comentarios', 'Qtd Caracteres', 'Codigo',
-        #                    'Opiniao', 'Emoji ', 'Densidade semantica', 'Dificuldade', 'Densidade semantica 2',
-        #                    'Dificuldade 2', 'Tristeza', 'Alegria', 'Medo', 'Aversao', 'Raiva', 'Pontuacao', 'Resultado'])
+        #                    'Opiniao', 'Emoji ', 'Densidade semantica', 'Dificuldade',
+        #                    'Tristeza', 'Alegria', 'Medo', 'Aversao', 'Raiva', 'Pontuacao', 'Resultado'])
         driver.execute_script('window.scrollBy(0, 445)')
         time.sleep(6)
         i = 0
@@ -47,15 +50,15 @@ def dadoVideo(url_video):
         deslikes = soup.find_all("span", {"id": "text"})[0].get_text()
 
         if ("," in deslikes):
-            deslikes = deslikes.replace(" mil", "00").replace(",", ".")
+            deslikes = deslikes.replace(" mil", "00").replace(",", "")
         else:
-            deslikes = deslikes.replace(" mil", "000").replace("," ,".")
+            deslikes = deslikes.replace(" mil", "000").replace("," ,"")
 
         likess = dados[0].get_text()
         if("," in likess):
-            likess = likess.replace(" mil", "00").replace(",",".")
+            likess = likess.replace(" mil", "00").replace(",","")
         else:
-            likess = likess.replace(" mil", "000").replace(",",".")
+            likess = likess.replace(" mil", "000").replace(",","")
         visualizacoes = dados[1].get_text()
 
         #Realizamos uma busca em todas as Tags que contenham comentário, começando com TAG o identificador, Ex: "class", ou "id" e na frente o nome do respectivo campo
@@ -83,16 +86,29 @@ def dadoVideo(url_video):
                         comment[count].get_text() or "+=" in comment[count].get_text()):
 
                     result = [link, visualizacoes, likess, deslikes, likeAndDeslike.strip(), caracteres, 1, 0,
-                              temImagem, cleon[0], cleon[1], cleon[2], cleon[3], str(x[0]), str(x[1]), str(x[2]),
+                              temImagem, cleon1[0], cleon1[1], str(x[0]), str(x[1]), str(x[2]),
                               str(x[3]), str(x[4]), str(x[5]), str(x[6])]
                     print(result)
                     writer.writerow(result)
+
+                    result2 = [link, visualizacoes, likess, deslikes, likeAndDeslike.strip(), caracteres, 1, 0,
+                              temImagem, cleon2[0], cleon2[1], str(x[0]), str(x[1]), str(x[2]),
+                              str(x[3]), str(x[4]), str(x[5]), str(x[6])]
+                    print(result2)
+                    writer.writerow(result2)
+
                 else:
                     result = [link, visualizacoes, likess, deslikes, likeAndDeslike.strip(), caracteres, 0, 1,
-                              temImagem, cleon[0], cleon[1], cleon[2], cleon[3], str(x[0]), str(x[1]), str(x[2]),
+                              temImagem, cleon1[0], cleon1[1], str(x[0]), str(x[1]), str(x[2]),
                               str(x[3]), str(x[4]), str(x[5]), str(x[6])]
                     print(result)
                     writer.writerow(result)
+
+                    result2 = [link, visualizacoes, likess, deslikes, likeAndDeslike.strip(), caracteres, 0, 1,
+                              temImagem, cleon2[0], cleon2[1], str(x[0]), str(x[1]), str(x[2]),
+                              str(x[3]), str(x[4]), str(x[5]), str(x[6])]
+                    print(result2)
+                    writer.writerow(result2)
             else:
                 spans = comment[count].find_all("span")
                 comentario = ""
@@ -103,16 +119,28 @@ def dadoVideo(url_video):
 
                 if ("<" in comentario or "==" in comentario or "div" in comentario or "()" in comentario):
                     result = [link, visualizacoes, likess, deslikes, likeAndDeslike.strip(),
-                              caracteres, 1, 0, temImagem, cleon[0], cleon[1], cleon[2], cleon[3], str(x[0]), str(x[1]),
+                              caracteres, 1, 0, temImagem, cleon1[0], cleon1[1], str(x[0]), str(x[1]),
                               str(x[2]), str(x[3]), str(x[4]), str(x[5]), str(x[6])]
                     print(result)
                     writer.writerow(result)
+
+                    result2 = [link, visualizacoes, likess, deslikes, likeAndDeslike.strip(),
+                              caracteres, 1, 0, temImagem, cleon2[0], cleon2[1], str(x[0]), str(x[1]),
+                              str(x[2]), str(x[3]), str(x[4]), str(x[5]), str(x[6])]
+                    print(result2)
+                    writer.writerow(result2)
                 else:
                     result = [link, visualizacoes, likess, deslikes, likeAndDeslike.strip(),
-                              caracteres, 0, 1, temImagem, cleon[0], cleon[1], cleon[2], cleon[3], str(x[0]), str(x[1]),
+                              caracteres, 0, 1, temImagem, cleon1[0], cleon1[1], str(x[0]), str(x[1]),
                               str(x[2]), str(x[3]), str(x[4]), str(x[5]), str(x[6])]
                     print(result)
                     writer.writerow(result)
+
+                    result2 = [link, visualizacoes, likess, deslikes, likeAndDeslike.strip(),
+                              caracteres, 0, 1, temImagem, cleon2[0], cleon2[1], str(x[0]), str(x[1]),
+                              str(x[2]), str(x[3]), str(x[4]), str(x[5]), str(x[6])]
+                    print(result2)
+                    writer.writerow(result2)
             count = count + 1
 
 def analise_sentimentos(comment):
@@ -156,82 +184,158 @@ def analise_sentimentos(comment):
     return result
 
 
-def planilhaCleon(video):
-    if video == "https://www.youtube.com/watch?v=iFYWrDMfVNo":
-        return [1, 2, 2, 2]
-    if video == "https://www.youtube.com/watch?v=YUeiAhpPMjQ":
-        return [5, 4, 5, 4]
-    if video == "https://www.youtube.com/watch?v=XinLASYOJE4":
-        return [3, 1, 3, 2]
-    if video == "https://www.youtube.com/watch?v=MOXLCjL4Ik4":
-        return [3, 2, 3, 3]
-    if video == "https://www.youtube.com/watch?v=pMPlngyWHLM":
-        return [4, 3, 3, 3]
-    if video == "https://www.youtube.com/watch?v=PQzUj5Hd0jk":
-        return [2, 3, 3, 2]
-    if video == "https://www.youtube.com/watch?v=shBkovJfWpk":
-        return [4, 3, 2, 2]
-    if video == "https://www.youtube.com/watch?v=gisl6mK96Jg":
-        return [2, 4, 2, 4]
-    if video == "https://www.youtube.com/watch?v=Y2EJfB9DMLU":
-        return [3, 3, 3, 3]
-    if video == "https://www.youtube.com/watch?v=jtnLR8pA4YU":
-        return [1, 2, 1, 2]
-    if video == "https://www.youtube.com/watch?v=YpHxxLAQCdk":
-        return [1, 3, 3, 3]
-    if video == "https://www.youtube.com/watch?v=-9Nafr7zdJs":
-        return [2, 3, 3, 3]
-    if video == "https://www.youtube.com/watch?v=ZdU4wMyiTSs":
-        return [5, 3, 4, 3]
-    if video == "https://www.youtube.com/watch?v=ruOzUIA4rbs":
-        return [2, 3, 4, 4]
-    if video == "https://www.youtube.com/watch?v=r7f-aR7vgg0":
-        return [1, 2, 2, 1]
-    if video == "https://www.youtube.com/watch?v=SJzd9x2S2yg":
-        return [3, 3, 3, 3]
-    if video == "https://www.youtube.com/watch?v=AdyGxhYWhoM":
-        return [2, 4, 3, 3]
-    if video == "https://www.youtube.com/watch?v=pMPlngyWHLM":
-        return [3, 2, 4, 3]
-    if video == "https://www.youtube.com/watch?v=qiGTRJlCnlA":
-        return [4, 2, 3, 4]
-    if video == "https://www.youtube.com/watch?v=_HI7ltav9q4":
-        return [2, 3, 2	, 2]
-    if video == "https://www.youtube.com/watch?v=19IGAeoFKlU":
-        return [4, 2, 3, 2]
-    if video == "https://www.youtube.com/watch?v=_PZldwo0vVo":
-        return [3, 2, 4, 3]
-    if video == "https://www.youtube.com/watch?v=SJzd9x2S2yg":
-        return [3, 3, 3, 3]
-    if video == "https://www.youtube.com/watch?v=oSQfzjl110k":
-        return [2, 1, 3, 2]
-    if video == "https://www.youtube.com/watch?v=jAzL4SE5-QM":
-        return [2, 4, 3, 3]
-    if video == "https://www.youtube.com/watch?v=EGmlFdwD4C4":
-        return [3, 2, 3, 2]
-    if video == "https://www.youtube.com/watch?v=7yBXNGVyN3Q":
-        return [3, 2, 3, 2]
-    if video == "https://www.youtube.com/watch?v=WgYW2TMwA9U":
-        return [4, 3, 3, 3]
-    if video == "https://www.youtube.com/watch?v=8qbqFsPov3g":
-        return [2, 1, 2, 2]
-    if video == "https://www.youtube.com/watch?v=DnHSTYuk-V4":
-        return [4, 3, 3, 3]
-    if video == "https://www.youtube.com/watch?v=iphqkUNXxek":
-        return [5, 4, 4, 4]
-    if video == "https://www.youtube.com/watch?v=mGLtyCOJe4A":
-        return [2, 2, 3, 3]
-    if video == "https://www.youtube.com/watch?v=D5QvQmes198":
-        return [2, 2, 3, 2]
-    if video == "https://www.youtube.com/watch?v=u5P_vryX0fo":
-        return [1, 2, 3, 3]
-    if video == "https://www.youtube.com/watch?v=NctjqlfKC0U":
-        return [4, 3, 3, 2]
-    if video == "https://www.youtube.com/watch?v=_Z-yaWEmV9c":
-        return [4, 4, 3, 3]
-    if video == "https://www.youtube.com/watch?v=FcrMEfjLxwg":
-        return [3, 4, 3, 2]
-    return ['', '', '', '',]
+def planilhaCleon(video, index):
+    if(index == 1):
+        if video == "https://www.youtube.com/watch?v=iFYWrDMfVNo":
+            return [1, 2]
+        if video == "https://www.youtube.com/watch?v=YUeiAhpPMjQ":
+            return [5, 4]
+        if video == "https://www.youtube.com/watch?v=XinLASYOJE4":
+            return [3, 1]
+        if video == "https://www.youtube.com/watch?v=MOXLCjL4Ik4":
+            return [3, 2]
+        if video == "https://www.youtube.com/watch?v=pMPlngyWHLM":
+            return [4, 3]
+        if video == "https://www.youtube.com/watch?v=PQzUj5Hd0jk":
+            return [2, 3]
+        if video == "https://www.youtube.com/watch?v=shBkovJfWpk":
+            return [4, 3]
+        if video == "https://www.youtube.com/watch?v=gisl6mK96Jg":
+            return [2, 4]
+        if video == "https://www.youtube.com/watch?v=Y2EJfB9DMLU":
+            return [3, 3]
+        if video == "https://www.youtube.com/watch?v=jtnLR8pA4YU":
+            return [1, 2]
+        if video == "https://www.youtube.com/watch?v=YpHxxLAQCdk":
+            return [1, 3]
+        if video == "https://www.youtube.com/watch?v=-9Nafr7zdJs":
+            return [2, 3]
+        if video == "https://www.youtube.com/watch?v=ZdU4wMyiTSs":
+            return [5, 3]
+        if video == "https://www.youtube.com/watch?v=ruOzUIA4rbs":
+            return [2, 3]
+        if video == "https://www.youtube.com/watch?v=r7f-aR7vgg0":
+            return [1, 2]
+        if video == "https://www.youtube.com/watch?v=SJzd9x2S2yg":
+            return [3, 3]
+        if video == "https://www.youtube.com/watch?v=AdyGxhYWhoM":
+            return [2, 4]
+        if video == "https://www.youtube.com/watch?v=pMPlngyWHLM":
+            return [3, 2]
+        if video == "https://www.youtube.com/watch?v=qiGTRJlCnlA":
+            return [4, 2]
+        if video == "https://www.youtube.com/watch?v=_HI7ltav9q4":
+            return [2, 3]
+        if video == "https://www.youtube.com/watch?v=19IGAeoFKlU":
+            return [4, 2]
+        if video == "https://www.youtube.com/watch?v=_PZldwo0vVo":
+            return [3, 2]
+        if video == "https://www.youtube.com/watch?v=SJzd9x2S2yg":
+            return [3, 3]
+        if video == "https://www.youtube.com/watch?v=oSQfzjl110k":
+            return [2, 1]
+        if video == "https://www.youtube.com/watch?v=jAzL4SE5-QM":
+            return [2, 4]
+        if video == "https://www.youtube.com/watch?v=EGmlFdwD4C4":
+            return [3, 2]
+        if video == "https://www.youtube.com/watch?v=7yBXNGVyN3Q":
+            return [3, 2]
+        if video == "https://www.youtube.com/watch?v=WgYW2TMwA9U":
+            return [4, 3]
+        if video == "https://www.youtube.com/watch?v=8qbqFsPov3g":
+            return [2, 1]
+        if video == "https://www.youtube.com/watch?v=DnHSTYuk-V4":
+            return [4, 3]
+        if video == "https://www.youtube.com/watch?v=iphqkUNXxek":
+            return [5, 4]
+        if video == "https://www.youtube.com/watch?v=mGLtyCOJe4A":
+            return [2, 2]
+        if video == "https://www.youtube.com/watch?v=D5QvQmes198":
+            return [2, 2]
+        if video == "https://www.youtube.com/watch?v=u5P_vryX0fo":
+            return [1, 2]
+        if video == "https://www.youtube.com/watch?v=NctjqlfKC0U":
+            return [4, 3]
+        if video == "https://www.youtube.com/watch?v=_Z-yaWEmV9c":
+            return [4, 4]
+        if video == "https://www.youtube.com/watch?v=FcrMEfjLxwg":
+            return [3, 4]
+    elif (index == 2):
+        if video == "https://www.youtube.com/watch?v=iFYWrDMfVNo":
+            return [2, 2]
+        if video == "https://www.youtube.com/watch?v=YUeiAhpPMjQ":
+            return [5, 4]
+        if video == "https://www.youtube.com/watch?v=XinLASYOJE4":
+            return [3, 2]
+        if video == "https://www.youtube.com/watch?v=MOXLCjL4Ik4":
+            return [3, 3]
+        if video == "https://www.youtube.com/watch?v=pMPlngyWHLM":
+            return [3, 3]
+        if video == "https://www.youtube.com/watch?v=PQzUj5Hd0jk":
+            return [3, 2]
+        if video == "https://www.youtube.com/watch?v=shBkovJfWpk":
+            return [2, 2]
+        if video == "https://www.youtube.com/watch?v=gisl6mK96Jg":
+            return [2, 4]
+        if video == "https://www.youtube.com/watch?v=Y2EJfB9DMLU":
+            return [3, 3]
+        if video == "https://www.youtube.com/watch?v=jtnLR8pA4YU":
+            return [1, 2]
+        if video == "https://www.youtube.com/watch?v=YpHxxLAQCdk":
+            return [3, 3]
+        if video == "https://www.youtube.com/watch?v=-9Nafr7zdJs":
+            return [3, 3]
+        if video == "https://www.youtube.com/watch?v=ZdU4wMyiTSs":
+            return [4, 3]
+        if video == "https://www.youtube.com/watch?v=ruOzUIA4rbs":
+            return [4, 4]
+        if video == "https://www.youtube.com/watch?v=r7f-aR7vgg0":
+            return [2, 1]
+        if video == "https://www.youtube.com/watch?v=SJzd9x2S2yg":
+            return [3, 3]
+        if video == "https://www.youtube.com/watch?v=AdyGxhYWhoM":
+            return [3, 3]
+        if video == "https://www.youtube.com/watch?v=pMPlngyWHLM":
+            return [4, 3]
+        if video == "https://www.youtube.com/watch?v=qiGTRJlCnlA":
+            return [3, 4]
+        if video == "https://www.youtube.com/watch?v=_HI7ltav9q4":
+            return [2, 2]
+        if video == "https://www.youtube.com/watch?v=19IGAeoFKlU":
+            return [3, 2]
+        if video == "https://www.youtube.com/watch?v=_PZldwo0vVo":
+            return [4, 3]
+        if video == "https://www.youtube.com/watch?v=SJzd9x2S2yg":
+            return [3, 3]
+        if video == "https://www.youtube.com/watch?v=oSQfzjl110k":
+            return [3, 2]
+        if video == "https://www.youtube.com/watch?v=jAzL4SE5-QM":
+            return [3, 3]
+        if video == "https://www.youtube.com/watch?v=EGmlFdwD4C4":
+            return [3, 2]
+        if video == "https://www.youtube.com/watch?v=7yBXNGVyN3Q":
+            return [3, 2]
+        if video == "https://www.youtube.com/watch?v=WgYW2TMwA9U":
+            return [3, 3]
+        if video == "https://www.youtube.com/watch?v=8qbqFsPov3g":
+            return [2, 2]
+        if video == "https://www.youtube.com/watch?v=DnHSTYuk-V4":
+            return [3, 3]
+        if video == "https://www.youtube.com/watch?v=iphqkUNXxek":
+            return [4, 4]
+        if video == "https://www.youtube.com/watch?v=mGLtyCOJe4A":
+            return [3, 3]
+        if video == "https://www.youtube.com/watch?v=D5QvQmes198":
+            return [3, 2]
+        if video == "https://www.youtube.com/watch?v=u5P_vryX0fo":
+            return [3, 3]
+        if video == "https://www.youtube.com/watch?v=NctjqlfKC0U":
+            return [3, 2]
+        if video == "https://www.youtube.com/watch?v=_Z-yaWEmV9c":
+            return [3, 3]
+        if video == "https://www.youtube.com/watch?v=FcrMEfjLxwg":
+            return [3, 2]
+    return ['', '', '', '']
 
 if __name__ == '__main__':
-    dadoVideo("https://www.youtube.com/watch?v=EGmlFdwD4C4")
+    dadoVideo("https://www.youtube.com/watch?v=XinLASYOJE4")
