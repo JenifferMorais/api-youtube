@@ -27,7 +27,7 @@ def dadoVideo(url_video):
     print(cleon1)
     cleon2 = planilhaCleon(url_video, 2)
     print(cleon2)
-    with open('CSV/teste.csv', 'a', encoding="utf-8") as csvfile:
+    with open('CSV/modelo4.csv', 'a', encoding="utf-8") as csvfile:
         writer = csv.writer(csvfile)
         # writer.writerow(['Link', 'Visualizacoes', 'Like', 'Deslikes', 'Like Comentarios', 'Qtd Caracteres', 'Codigo',
         #                    'Opiniao', 'Emoji ', 'Densidade semantica', 'Dificuldade',

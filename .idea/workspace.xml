@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6fe6cff0-dd38-4f7f-aa50-cd1a1f883718" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSV/modelo4 - Copia.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSV/modelo4.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CSV/modelo4.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSV/teste.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CSV/teste.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modelo4.py" beforeDir="false" afterPath="$PROJECT_DIR$/modelo4.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
