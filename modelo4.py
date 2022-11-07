@@ -29,7 +29,7 @@ def dadoVideo(url_video):
     print(cleon2)
     with open('CSV/modelo4.csv', 'a', encoding="utf-8") as csvfile:
         writer = csv.writer(csvfile)
-        # writer.writerow(['Link', 'Visualizacoes', 'Like', 'Deslikes', 'Like Comentarios', 'Qtd Caracteres', 'Codigo',
+        # writer.writerow(['Visualizacoes', 'Like', 'Deslikes', 'Like Comentarios', 'Qtd Caracteres', 'Codigo',
         #                    'Opiniao', 'Emoji ', 'Densidade semantica', 'Dificuldade',
         #                    'Tristeza', 'Alegria', 'Medo', 'Aversao', 'Raiva', 'Pontuacao', 'Resultado'])
         driver.execute_script('window.scrollBy(0, 445)')
@@ -85,26 +85,26 @@ def dadoVideo(url_video):
                         or "<table>" in comment[count].get_text() or "<tr>" in comment[count].get_text() or "<td>" in
                         comment[count].get_text() or "+=" in comment[count].get_text()):
 
-                    result = [link, visualizacoes, likess, deslikes, likeAndDeslike.strip(), caracteres, 1, 0,
+                    result = [visualizacoes, likess, deslikes, likeAndDeslike.strip(), caracteres, 1, 0,
                               temImagem, cleon1[0], cleon1[1], str(x[0]), str(x[1]), str(x[2]),
                               str(x[3]), str(x[4]), str(x[5]), str(x[6])]
                     print(result)
                     writer.writerow(result)
 
-                    result2 = [link, visualizacoes, likess, deslikes, likeAndDeslike.strip(), caracteres, 1, 0,
+                    result2 = [visualizacoes, likess, deslikes, likeAndDeslike.strip(), caracteres, 1, 0,
                               temImagem, cleon2[0], cleon2[1], str(x[0]), str(x[1]), str(x[2]),
                               str(x[3]), str(x[4]), str(x[5]), str(x[6])]
                     print(result2)
                     writer.writerow(result2)
 
                 else:
-                    result = [link, visualizacoes, likess, deslikes, likeAndDeslike.strip(), caracteres, 0, 1,
+                    result = [visualizacoes, likess, deslikes, likeAndDeslike.strip(), caracteres, 0, 1,
                               temImagem, cleon1[0], cleon1[1], str(x[0]), str(x[1]), str(x[2]),
                               str(x[3]), str(x[4]), str(x[5]), str(x[6])]
                     print(result)
                     writer.writerow(result)
 
-                    result2 = [link, visualizacoes, likess, deslikes, likeAndDeslike.strip(), caracteres, 0, 1,
+                    result2 = [visualizacoes, likess, deslikes, likeAndDeslike.strip(), caracteres, 0, 1,
                               temImagem, cleon2[0], cleon2[1], str(x[0]), str(x[1]), str(x[2]),
                               str(x[3]), str(x[4]), str(x[5]), str(x[6])]
                     print(result2)
@@ -118,25 +118,25 @@ def dadoVideo(url_video):
                 x = analise_sentimentos(comentario.replace(",", "-").strip())
 
                 if ("<" in comentario or "==" in comentario or "div" in comentario or "()" in comentario):
-                    result = [link, visualizacoes, likess, deslikes, likeAndDeslike.strip(),
+                    result = [visualizacoes, likess, deslikes, likeAndDeslike.strip(),
                               caracteres, 1, 0, temImagem, cleon1[0], cleon1[1], str(x[0]), str(x[1]),
                               str(x[2]), str(x[3]), str(x[4]), str(x[5]), str(x[6])]
                     print(result)
                     writer.writerow(result)
 
-                    result2 = [link, visualizacoes, likess, deslikes, likeAndDeslike.strip(),
+                    result2 = [visualizacoes, likess, deslikes, likeAndDeslike.strip(),
                               caracteres, 1, 0, temImagem, cleon2[0], cleon2[1], str(x[0]), str(x[1]),
                               str(x[2]), str(x[3]), str(x[4]), str(x[5]), str(x[6])]
                     print(result2)
                     writer.writerow(result2)
                 else:
-                    result = [link, visualizacoes, likess, deslikes, likeAndDeslike.strip(),
+                    result = [visualizacoes, likess, deslikes, likeAndDeslike.strip(),
                               caracteres, 0, 1, temImagem, cleon1[0], cleon1[1], str(x[0]), str(x[1]),
                               str(x[2]), str(x[3]), str(x[4]), str(x[5]), str(x[6])]
                     print(result)
                     writer.writerow(result)
 
-                    result2 = [link, visualizacoes, likess, deslikes, likeAndDeslike.strip(),
+                    result2 = [visualizacoes, likess, deslikes, likeAndDeslike.strip(),
                               caracteres, 0, 1, temImagem, cleon2[0], cleon2[1], str(x[0]), str(x[1]),
                               str(x[2]), str(x[3]), str(x[4]), str(x[5]), str(x[6])]
                     print(result2)
