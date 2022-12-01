@@ -24,10 +24,33 @@ def dadoVideo(url_video):
     time.sleep(6)
 
     cleon1 = planilhaCleon(url_video, 1)
-    print(cleon1)
     cleon2 = planilhaCleon(url_video, 2)
-    print(cleon2)
-    with open('CSV/modelo4-final.csv', 'a', encoding="utf-8") as csvfile:
+
+    vLikeComentario = 0.0
+    vCodigo = 0
+    vOpniao = 0
+    vEmoji = 0
+    vCaracteres = 0.0
+    vTristeza = 0.0
+    vAlegria = 0.0
+    vMedo = 0.0
+    vAversao = 0.0
+    vRaiva = 0.0
+    vPontuacao = 0.0
+    vResultado = 0.0
+
+
+    quantidadeTristeza = 0.0
+    quantidadeAlegria = 0.0
+    quantidadeMedo = 0.0
+    quantidadeAversao = 0.0
+    quantidadeRaiva = 0.0
+    quantidadePontuacao = 0.0
+    quantidadeResultado = 0.0
+
+    quantidade = 0
+
+    with open('CSV/modelo5-final-media (4).csv', 'a', encoding="utf-8") as csvfile:
         writer = csv.writer(csvfile)
         # writer.writerow(['Visualizacoes', 'Like', 'Deslikes', 'Like Comentarios', 'Qtd Caracteres', 'Codigo',
         #                    'Opiniao', 'Emoji ', 'Densidade semantica', 'Dificuldade',
@@ -36,7 +59,7 @@ def dadoVideo(url_video):
         time.sleep(6)
         i = 0
         #window.scrolBy para descer a página e carregar os comentários
-        while i<15:
+        while i<5:
             i=i+1
             driver.execute_script('window.scrollBy(0, 2445)')
             time.sleep(2)
@@ -85,30 +108,53 @@ def dadoVideo(url_video):
                         or "<table>" in comment[count].get_text() or "<tr>" in comment[count].get_text() or "<td>" in
                         comment[count].get_text() or "+=" in comment[count].get_text()):
 
-                    result = [visualizacoes, likess, deslikes, likeAndDeslike.strip(), caracteres, 1, 0,
-                              temImagem, cleon1[0], cleon1[1], str(x[0]), str(x[1]), str(x[2]),
-                              str(x[3]), str(x[4]), str(x[5]), str(x[6])]
-                    print(result)
-                    writer.writerow(result)
+                    vCodigo = vCodigo + 1
 
-                    result2 = [visualizacoes, likess, deslikes, likeAndDeslike.strip(), caracteres, 1, 0,
-                              temImagem, cleon2[0], cleon2[1], str(x[0]), str(x[1]), str(x[2]),
-                              str(x[3]), str(x[4]), str(x[5]), str(x[6])]
-                    print(result2)
-                    writer.writerow(result2)
+                    quantidade = quantidade + 1
+                    vLikeComentario = vLikeComentario + float(likeAndDeslike.strip())
+                    vEmoji = vEmoji + temImagem
+
+                    vCaracteres = vCaracteres + caracteres
+                    vTristeza = vTristeza + x[0]
+                    vAlegria = vAlegria + x[1]
+                    vMedo = vMedo + x[2]
+                    vAversao = vAversao + x[3]
+                    vRaiva = vRaiva + x[4]
+                    vPontuacao = vPontuacao + x[5]
+                    vResultado = vResultado + x[6]
+
+                    quantidadeTristeza = quantidadeTristeza + validacao(x[0])
+                    quantidadeAlegria = quantidadeAlegria + validacao(x[1])
+                    quantidadeMedo = quantidadeMedo + validacao(x[2])
+                    quantidadeAversao = quantidadeAversao + validacao(x[3])
+                    quantidadeRaiva = quantidadeRaiva + validacao(x[4])
+                    quantidadePontuacao = quantidadePontuacao + validacao(x[5])
+                    quantidadeResultado = quantidadeResultado + validacao(x[6])
 
                 else:
-                    result = [visualizacoes, likess, deslikes, likeAndDeslike.strip(), caracteres, 0, 1,
-                              temImagem, cleon1[0], cleon1[1], str(x[0]), str(x[1]), str(x[2]),
-                              str(x[3]), str(x[4]), str(x[5]), str(x[6])]
-                    print(result)
-                    writer.writerow(result)
+                    vOpniao = vOpniao + 1
 
-                    result2 = [visualizacoes, likess, deslikes, likeAndDeslike.strip(), caracteres, 0, 1,
-                              temImagem, cleon2[0], cleon2[1], str(x[0]), str(x[1]), str(x[2]),
-                              str(x[3]), str(x[4]), str(x[5]), str(x[6])]
-                    print(result2)
-                    writer.writerow(result2)
+                    quantidade = quantidade + 1
+                    vLikeComentario = vLikeComentario + float(likeAndDeslike.strip())
+                    vEmoji = vEmoji + temImagem
+
+                    vCaracteres = vCaracteres + caracteres
+                    vTristeza = vTristeza + x[0]
+                    vAlegria = vAlegria + x[1]
+                    vMedo = vMedo + x[2]
+                    vAversao = vAversao + x[3]
+                    vRaiva = vRaiva + x[4]
+                    vPontuacao = vPontuacao + x[5]
+                    vResultado = vResultado + x[6]
+
+                    quantidadeTristeza = quantidadeTristeza + validacao(x[0])
+                    quantidadeAlegria = quantidadeAlegria + validacao(x[1])
+                    quantidadeMedo = quantidadeMedo + validacao(x[2])
+                    quantidadeAversao = quantidadeAversao + validacao(x[3])
+                    quantidadeRaiva = quantidadeRaiva + validacao(x[4])
+                    quantidadePontuacao = quantidadePontuacao + validacao(x[5])
+                    quantidadeResultado = quantidadeResultado + validacao(x[6])
+
             else:
                 spans = comment[count].find_all("span")
                 comentario = ""
@@ -123,34 +169,146 @@ def dadoVideo(url_video):
                         or "<table>" in comment[count].get_text() or "<tr>" in comment[count].get_text() or "<td>" in
                         comment[count].get_text() or "+=" in comment[count].get_text()):
 
-                    result = [visualizacoes, likess, deslikes, likeAndDeslike.strip(),
-                              caracteres, 1, 0, temImagem, cleon1[0], cleon1[1], str(x[0]), str(x[1]),
-                              str(x[2]), str(x[3]), str(x[4]), str(x[5]), str(x[6])]
-                    print(result)
-                    writer.writerow(result)
+                    vCodigo = vCodigo + 1
 
-                    result2 = [visualizacoes, likess, deslikes, likeAndDeslike.strip(),
-                              caracteres, 1, 0, temImagem, cleon2[0], cleon2[1], str(x[0]), str(x[1]),
-                              str(x[2]), str(x[3]), str(x[4]), str(x[5]), str(x[6])]
-                    print(result2)
-                    writer.writerow(result2)
+                    quantidade = quantidade + 1
+                    vLikeComentario = vLikeComentario + float(likeAndDeslike.strip())
+                    vEmoji = vEmoji + temImagem
+
+                    vCaracteres = vCaracteres + caracteres
+                    vTristeza = vTristeza + x[0]
+                    vAlegria = vAlegria + x[1]
+                    vMedo = vMedo + x[2]
+                    vAversao = vAversao + x[3]
+                    vRaiva = vRaiva + x[4]
+                    vPontuacao = vPontuacao + x[5]
+                    vResultado = vResultado + x[6]
+
+                    quantidadeTristeza = quantidadeTristeza + validacao(x[0])
+                    quantidadeAlegria = quantidadeAlegria + validacao(x[1])
+                    quantidadeMedo = quantidadeMedo + validacao(x[2])
+                    quantidadeAversao = quantidadeAversao + validacao(x[3])
+                    quantidadeRaiva = quantidadeRaiva + validacao(x[4])
+                    quantidadePontuacao = quantidadePontuacao + validacao(x[5])
+                    quantidadeResultado = quantidadeResultado + validacao(x[6])
+
                 else:
-                    result = [visualizacoes, likess, deslikes, likeAndDeslike.strip(),
-                              caracteres, 0, 1, temImagem, cleon1[0], cleon1[1], str(x[0]), str(x[1]),
-                              str(x[2]), str(x[3]), str(x[4]), str(x[5]), str(x[6])]
-                    print(result)
-                    writer.writerow(result)
+                    vOpniao = vOpniao + 1
 
-                    result2 = [visualizacoes, likess, deslikes, likeAndDeslike.strip(),
-                              caracteres, 0, 1, temImagem, cleon2[0], cleon2[1], str(x[0]), str(x[1]),
-                              str(x[2]), str(x[3]), str(x[4]), str(x[5]), str(x[6])]
-                    print(result2)
-                    writer.writerow(result2)
+                    quantidade = quantidade + 1
+                    vLikeComentario = vLikeComentario + float(likeAndDeslike.strip())
+                    vEmoji = vEmoji + temImagem
+
+                    vCaracteres = vCaracteres + caracteres
+                    vTristeza = vTristeza + x[0]
+                    vAlegria = vAlegria + x[1]
+                    vMedo = vMedo + x[2]
+                    vAversao = vAversao + x[3]
+                    vRaiva = vRaiva + x[4]
+                    vPontuacao = vPontuacao + x[5]
+                    vResultado = vResultado + x[6]
+
+                    quantidadeTristeza = quantidadeTristeza + validacao(x[0])
+                    quantidadeAlegria = quantidadeAlegria + validacao(x[1])
+                    quantidadeMedo = quantidadeMedo + validacao(x[2])
+                    quantidadeAversao = quantidadeAversao + validacao(x[3])
+                    quantidadeRaiva = quantidadeRaiva + validacao(x[4])
+                    quantidadePontuacao = quantidadePontuacao + validacao(x[5])
+                    quantidadeResultado = quantidadeResultado + validacao(x[6])
+
             count = count + 1
+
+            if(quantidade == 20):
+                result = [visualizacoes, likess, deslikes, mediaSentimento(vLikeComentario, quantidade),
+                           mediaSentimento(vCaracteres, quantidade),
+                           mediaSentimento(vCodigo, quantidade),
+                           mediaSentimento(vOpniao, quantidade),
+                           mediaSentimento(vEmoji, quantidade), cleon1[0], cleon1[1],
+                           mediaSentimento(vTristeza, quantidadeTristeza),
+                           mediaSentimento(vAlegria, quantidadeAlegria),
+                           mediaSentimento(vMedo, quantidadeMedo),
+                           mediaSentimento(vAversao, quantidadeAversao),
+                           mediaSentimento(vRaiva, quantidadeRaiva),
+                           mediaSentimento(vPontuacao, quantidadePontuacao),
+                           mediaSentimento(vResultado, quantidadeResultado)]
+                print(result)
+                writer.writerow(result)
+
+                result2 = [visualizacoes, likess, deslikes, mediaSentimento(vLikeComentario, quantidade),
+                           mediaSentimento(vCaracteres, quantidade),
+                           mediaSentimento(vCodigo, quantidade),
+                           mediaSentimento(vOpniao, quantidade),
+                           mediaSentimento(vEmoji, quantidade), cleon2[0], cleon2[1],
+                           mediaSentimento(vTristeza, quantidadeTristeza),
+                           mediaSentimento(vAlegria, quantidadeAlegria),
+                           mediaSentimento(vMedo, quantidadeMedo),
+                           mediaSentimento(vAversao, quantidadeAversao),
+                           mediaSentimento(vRaiva, quantidadeRaiva),
+                           mediaSentimento(vPontuacao, quantidadePontuacao),
+                           mediaSentimento(vResultado, quantidadeResultado)]
+
+                print(result2)
+                writer.writerow(result2)
+
+                vLikeComentario = 0.0
+                vCodigo = 0
+                vOpniao = 0
+                vEmoji = 0
+                vCaracteres = 0.0
+                vTristeza = 0.0
+                vAlegria = 0.0
+                vMedo = 0.0
+                vAversao = 0.0
+                vRaiva = 0.0
+                vPontuacao = 0.0
+                vResultado = 0.0
+
+                quantidadeTristeza = 0.0
+                quantidadeAlegria = 0.0
+                quantidadeMedo = 0.0
+                quantidadeAversao = 0.0
+                quantidadeRaiva = 0.0
+                quantidadePontuacao = 0.0
+                quantidadeResultado = 0.0
+
+                quantidade = 0
+
+        if(len(comment) < 20 or quantidade > 0):
+            result = [visualizacoes, likess, deslikes, mediaSentimento(vLikeComentario, quantidade),
+                           mediaSentimento(vCaracteres, quantidade),
+                           mediaSentimento(vCodigo, quantidade),
+                           mediaSentimento(vOpniao, quantidade),
+                           mediaSentimento(vEmoji, quantidade), cleon1[0], cleon1[1],
+                           mediaSentimento(vTristeza, quantidadeTristeza),
+                           mediaSentimento(vAlegria, quantidadeAlegria),
+                           mediaSentimento(vMedo, quantidadeMedo),
+                           mediaSentimento(vAversao, quantidadeAversao),
+                           mediaSentimento(vRaiva, quantidadeRaiva),
+                           mediaSentimento(vPontuacao, quantidadePontuacao),
+                           mediaSentimento(vResultado, quantidadeResultado)]
+            print(result)
+            writer.writerow(result)
+
+            result2 = [visualizacoes, likess, deslikes, mediaSentimento(vLikeComentario, quantidade),
+                           mediaSentimento(vCaracteres, quantidade),
+                           mediaSentimento(vCodigo, quantidade),
+                           mediaSentimento(vOpniao, quantidade),
+                           mediaSentimento(vEmoji, quantidade), cleon2[0], cleon2[1],
+                           mediaSentimento(vTristeza, quantidadeTristeza),
+                           mediaSentimento(vAlegria, quantidadeAlegria),
+                           mediaSentimento(vMedo, quantidadeMedo),
+                           mediaSentimento(vAversao, quantidadeAversao),
+                           mediaSentimento(vRaiva, quantidadeRaiva),
+                           mediaSentimento(vPontuacao, quantidadePontuacao),
+                           mediaSentimento(vResultado, quantidadeResultado)]
+
+            print(result2)
+            writer.writerow(result2)
+
 
 def analise_sentimentos(comment):
     analysis_list = []
-    result = ['0.0', '0.0', '0.0', '0.0', '0.0', '0.0', '0.0']
+    result = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
     if(comment != ""):
         url = 'https://api.gotit.ai/NLU/v1.5/Analyze'
         data = {"T": comment, "S": True, "EM": True}
@@ -178,14 +336,14 @@ def analise_sentimentos(comment):
                   x[0].analysis.sentiment.score,
                   x[0].analysis.sentiment.label]
 
+
         if result[6] == 'POSITIVE':
             result[6] = 1
         if result[6] == 'MIXED' or result[6] == 'NEUTRAL':
             result[6] = 0
         if result[6] == 'NEGATIVE':
             result[6] = -1
-
-    print(comment)
+        print(result)
     return result
 
 
@@ -342,5 +500,19 @@ def planilhaCleon(video, index):
             return [3, 2]
     return ['', '', '', '']
 
+def validacao(valor):
+    if(valor == 0.0 or valor == 0):
+        return 0
+    else:
+        return 1
+
+def mediaSentimento(valor, quantidade):
+    if(quantidade == 0 or quantidade == 0.0):
+        return quantidade
+    else:
+        return round((valor/quantidade), 3)
+
 if __name__ == '__main__':
-    dadoVideo("https://www.youtube.com/watch?v=XinLASYOJE4")
+    dadoVideo("https://www.youtube.com/watch?v=_Z-yaWEmV9c")
+
+

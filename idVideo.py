@@ -1,6 +1,6 @@
-import modelo1
-import modelo2
-import modelo4
+
+import modelo5
+
 
 def videos():
     v = 0
@@ -40,11 +40,12 @@ def videos():
        "https://www.youtube.com/watch?v=u5P_vryX0fo",
        "https://www.youtube.com/watch?v=NctjqlfKC0U",
        "https://www.youtube.com/watch?v=_Z-yaWEmV9c",
-       "https://www.youtube.com/watch?v=FcrMEfjLxwg"]
+       "https://www.youtube.com/watch?v=FcrMEfjLxwg"
+    ]
 
     while v < len(url):
            try:
-               modelo4.dadoVideo(url[v])
+               modelo5.dadoVideo(url[v])
                print(v+1,"Sucesso no vídeo:", url[v])
            except:
                print(v+1,"Erro no vídeo:", url[v])
